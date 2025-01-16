@@ -14,9 +14,7 @@ function App() {
   }
   return (
     <>
-      <header style={{backgroundColor:"grey"}}>
-        <NavBar />
-      </header>
+      <NavBar />
       <main style={{display:"Block", }}>
           <div className="cardContainer">
             <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
@@ -26,6 +24,7 @@ function App() {
             <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
             <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
             <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+
           </div>
       </main>
       <footer style={{display:"Block"}}>

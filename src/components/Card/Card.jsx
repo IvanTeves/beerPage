@@ -3,7 +3,8 @@ import { BiZoomIn } from "react-icons/bi"
 export const Card = ({imagen,titulo,precio,size}) => {
     return (
         <div className="card"style={{width:size,
-            height:size
+            height:size,
+            margin: "1vw"
 
         }}>
             <img   style={{
