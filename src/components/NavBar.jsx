@@ -5,7 +5,6 @@ export const NavBar = () => {
       <div style={{display: 'flex',
         justifyContent:'space-between'
       }}>
-        <img src="https://mercadocentral.gob.ar/sites/default/files/images/palta.png" alt="" style={{width:'10vw'}} />
         <span style={{color:'Blue', fontSize: '13px', fontWeight:'bold'}}>Gandhi</span>
         <nav>
           <a href="">Ipa</a>

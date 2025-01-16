@@ -1,12 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { NavBar } from "./components/NavBar";
-import { Item } from "./components/item/item";
-
-
-
+import { Card } from "./components/Card/Card";
+import { BsDisplay } from "react-icons/bs";
 
 
 
@@ -18,32 +14,31 @@ function App() {
   }
   return (
     <>
-      <div>
+      <header style={{backgroundColor:"grey"}}>
         <NavBar />
+      </header>
+      <main style={{display:"Block", }}>
+          <div className="cardContainer">
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          </div>
+      </main>
+      <footer style={{display:"Block"}}>
+        <div style={{}} >
+          <p>Direccion</p>
+          <p>contacto</p>
+          <p>telefono</p>
+          <p>facebook</p>
+        </div>
         <div>
-        <Item/>
-        <div>
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
+          <p>pepito</p>
         </div>
-        <h1>Ivo se vienen cosas grosas</h1>
-        <div className="card">
-          <button style = {styleButton} onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
-        </div>
-      </div>
+      </footer>
 
     </>
   );

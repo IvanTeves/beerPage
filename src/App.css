@@ -37,9 +37,21 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 10px;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.zoomable:hover {
+  transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
+}
+
+.cardContainer{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
 }
