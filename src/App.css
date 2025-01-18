@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 16px; /* Tamaño base consistente */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Fuente consistente */
+  line-height: 1.5; /* Espaciado consistente */
+}
 
 .rubik-{
   font-family: "Rubik", serif;
@@ -88,6 +101,8 @@
   align-items: flex-start;
 }
 .footer p{
+  margin-top: 3vh;
+  margin-bottom: 5px;
   margin-left: 2%;
   height: 0.5vh;  
   /*color: #f6e6dbff;*/
@@ -149,6 +164,7 @@
 .carousel .thumbs-wrapper {
   margin: 0px;
   overflow: hidden;
+  display: none;
 }
 
 .carousel .thumbs {
