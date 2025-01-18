@@ -77,6 +77,11 @@
   transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
 }
 
+.footer{
+  background-color: #35292dff;
+  height: 21vh;
+}
+
 .cardContainer{
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -127,3 +132,7 @@
     object-position: 0 -65vh ;
 }
 
+.carousel .thumbs-wrapper {
+  margin: 0px;
+  overflow: hidden;
+}

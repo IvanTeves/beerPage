@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <main style={{    display: 'flex' ,flexDirection: 'column'}}>
+      <main style={{    display: 'flex' ,flexDirection: 'column', height:'140vh'}}>
         <DemoCarousel />
         <div className="cardContainer">
           
@@ -29,15 +29,12 @@ function App() {
 
         </div>
       </main>
-      <footer style={{display:"Block"}}>
+      <footer className="footer">
         <div style={{}} >
           <p>Direccion</p>
           <p>contacto</p>
           <p>telefono</p>
           <p>facebook</p>
-        </div>
-        <div>
-          <p>pepito</p>
         </div>
       </footer>
 
