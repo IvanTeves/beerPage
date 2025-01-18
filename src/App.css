@@ -79,11 +79,23 @@
 
 .footer{
   background-color: #35292dff;
-  height: 21vh;
+  /*background-color: #c52026ff;*/
+  height: 23vh;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer p{
+  margin-left: 2%;
+  height: 0.5vh;  
+  /*color: #f6e6dbff;*/
+  color: white;
 }
 
 .cardContainer{
-  background-color: rgb(255, 255, 255);
+
   display: flex;
   justify-content: center;
   width: 100%;
@@ -103,6 +115,7 @@
 }
 
 .NavBar a {
+  /*color: #f6e6dbff;*/
   color: white;
   margin-right:20px;
 }
@@ -111,6 +124,7 @@
 .header{
   text-Align: left;
   background-Color:#35292dff;
+  /*background-color: #c52026ff;*/
   width:100%
 }
 
@@ -128,11 +142,15 @@
   width: 100%;
 }
 #sdBeige{
-    object-fit: contain; /* Asegúrate de que la imagen cubra completamente el contenedor */
+     /* Asegúrate de que la imagen cubra completamente el contenedor */
     object-position: 0 -65vh ;
 }
 
 .carousel .thumbs-wrapper {
   margin: 0px;
   overflow: hidden;
+}
+
+.carousel .thumbs {
+  display: none;
 }
