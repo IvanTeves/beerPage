@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+
+.rubik-{
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 .nova-cut-regular {
   font-family: "Nova Cut", serif;
   font-weight: 400;
@@ -14,7 +31,7 @@
 }
 
 #root {
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -68,9 +85,45 @@
   height: 30vh;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  margin-top: 50vh;
+
 }
 
 .NavBar{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+.NavBar a {
+  color: white;
+  margin-right:20px;
+}
+
+
+.header{
+  text-Align: left;
+  background-Color:#35292dff;
+  width:100%
+}
+
+.carousel{
+  width: 100%;
+  height: 40vh;
+  display: block;
+}
+
+.carousel div{
+  width: 100%;
+  height: 80vh;
+}
+.carousel div img{
+  width: 100%;
+}
+#sdBeige{
+    object-fit: contain; /* Asegúrate de que la imagen cubra completamente el contenedor */
+    object-position: 0 -65vh ;
+}
+

@@ -1,15 +1,17 @@
 import { TiShoppingCart } from "react-icons/ti";
 export const NavBar = () => {
   return (
-    <header style={{textAlign: "left",backgroundColor:"#35292dff", width:'100%'}}>
+    <header className="header">
       <div style={{display: 'flex',
         justifyContent:'space-between'
       }}>
         <img style={{height:'9vh',width:'9vw', paddingTop:'5px', paddingBottom:'5px'}}src=".\src\assets\Logoheader.svg" alt="" />
         <nav className="NavBar">
-          <a href="">Ipa</a>
-          <a href="">Golden</a>
-          <TiShoppingCart style={{fontSize:'50',color:'red'}}/>
+          <a href="">Productos</a>
+          <a href="">Servicios</a>
+          <a href="">Sobre Nosotros</a>
+          <a href="">Nuestros Clientes</a>
+          <a href="">Contacto</a>
         </nav>
       </div>
 

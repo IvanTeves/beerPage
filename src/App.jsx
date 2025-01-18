@@ -3,7 +3,7 @@ import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Card } from "./components/Card/Card";
 import { BsDisplay } from "react-icons/bs";
-
+import {DemoCarousel} from "./carousel";
 
 
 
@@ -15,17 +15,19 @@ function App() {
   return (
     <>
       <NavBar />
-      <main style={{display:"Block", }}>
-          <div className="cardContainer">
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-            <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+      <main style={{    display: 'flex' ,flexDirection: 'column'}}>
+        <DemoCarousel />
+        <div className="cardContainer">
+          
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
+          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
 
-          </div>
+        </div>
       </main>
       <footer style={{display:"Block"}}>
         <div style={{}} >
