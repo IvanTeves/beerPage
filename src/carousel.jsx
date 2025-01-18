@@ -9,10 +9,10 @@ export class DemoCarousel extends Component {
         return (
             <Carousel className="carousel">
                 <div >
-                    <img  id="sdBeige" src="banner.png" alt="Carousel 1" />                          
+                    <img  id="sdRed" src="banner.png" alt="Carousel 1" />                          
                 </div>
                 <div >
-                    <img id="sdRed" src="Imagen3.png" alt="Carousel 2" />
+                    <img id="sdBeige" src="Imagen3.png" alt="Carousel 2" />
                 </div>
                 <div >
                     <img  id="sdCerv"src="BannerCerveza.jpg" alt="Carousel 3" />
