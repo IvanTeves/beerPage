@@ -4,8 +4,7 @@ import { NavBar } from "./components/NavBar";
 import { Card } from "./components/Card/Card";
 import { BsDisplay } from "react-icons/bs";
 import {DemoCarousel} from "./carousel";
-
-
+import ScrollImage from "./components/ScrollImage";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,9 +13,12 @@ function App() {
   }
   return (
     <>
+      
       <NavBar />
-      <main style={{    display: 'flex' ,flexDirection: 'column', height:'140vh'}}>
-        <DemoCarousel />
+      <main style={{    display: 'flex' ,flexDirection: 'column', height:'250vh'}}>
+        {/*<DemoCarousel />*/}
+      
+        <ScrollImage />
         <div className="cardContainer">
           
           <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
@@ -28,6 +30,7 @@ function App() {
           <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
 
         </div>
+        {<DemoCarousel />}
       </main>
       <footer className="footer">
         <div  >

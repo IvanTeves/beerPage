@@ -1,0 +1,14 @@
+.banner-container {
+    width: 100%;  /* Ocupa todo el ancho de la pantalla */
+    height: 120vh; /* Alto del banner, ajustable */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .sprite {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Alto completo del contenedor */
+    background-image: url('spritesheet.png'); /* Ruta al spritesheet */
+    background-size: 5760px 5400px; /* Tamaño total del spritesheet (3 columnas x 5 filas) */
+    transition: background-position 0.1s linear; /* Transición más rápida y fluida */
+  }
