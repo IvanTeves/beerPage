@@ -23,14 +23,17 @@ a:hover {
 }
 
 body {
+  background-color: white;
   /*background-color: #f6e6dbff;*/
-  background-color:  rgba(53, 41, 45, 0.767);;
+  /*background-color:  rgba(53, 41, 45, 0.767);;*/
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   flex-direction: column;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+
 }
 
 h1 {

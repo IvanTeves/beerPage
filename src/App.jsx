@@ -5,12 +5,41 @@ import { Card } from "./components/Card/Card";
 import { BsDisplay } from "react-icons/bs";
 import {DemoCarousel} from "./carousel";
 import ScrollImage from "./components/ScrollImage";
+import { useEffect } from "react";
+
 
 function App() {
-  const [count, setCount] = useState(0);
-  const styleButton = {fontFamily: "Rubik",
-    marginTop:"12rem"
-  }
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Si el elemento es visible, añade la clase 'show'
+            entry.target.classList.add("show");
+          } else {
+            // Si el elemento deja de ser visible, elimina la clase 'show'
+            entry.target.classList.remove("show");
+          }
+        });
+      },
+      { threshold: 0.25 } // Umbral del 10%
+    );
+
+    const leftElements = document.querySelectorAll(".leftContainer");
+    const rightElements = document.querySelectorAll(".rightContainer");
+
+    // Observamos los elementos
+    leftElements.forEach((el) => observer.observe(el));
+    rightElements.forEach((el) => observer.observe(el));
+
+    // Cleanup para evitar fugas de memoria
+    return () => {
+      leftElements.forEach((el) => observer.unobserve(el));
+      rightElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
+
   return (
     <>
       
@@ -18,7 +47,7 @@ function App() {
       <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
         {/*<DemoCarousel />*/}
       
-        <ScrollImage />
+       {/* <ScrollImage />*/}
 {/*
         <div className="cardContainer">
           
@@ -33,13 +62,14 @@ function App() {
         </div>
 */}
         {<DemoCarousel />}
+        
         <div className="productContainer">
 
           <div className="leftContainer">             
-            <img  className="imgContainer zoomable"  src={'/Cerveza54.png'} alt="producto"/>
+            <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto"/>
             <div>
-              <p>Apa</p>
-              <p>
+              <p className="titleParraLeft">Apa</p>
+              <p className="parraLeft">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
                 atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
               </p>
@@ -47,10 +77,10 @@ function App() {
           </div>
 
           <div className="rightContainer">
-            <img  className="imgContainer zoomable"  src={'/Cerveza54.png'} alt="producto" />
+            <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto" />
             <div>
-              <p>Apa</p>
-              <p>
+              <p className="titleParraRight">Apa</p>
+              <p className="parraRight">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
                 atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
               </p>
@@ -58,10 +88,10 @@ function App() {
           </div>
 
           <div className="leftContainer">
-            <img className="imgContainer zoomable"  src={'/Cerveza54.png'} alt="producto"  />
+            <img className="imgContainer zoomable"  src={'copia.png'} alt="producto"  />
             <div>
-              <p>Apa</p>
-              <p>
+              <p className="titleParraLeft">Apa</p>
+              <p className="parraLeft">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
                 atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
               </p>

@@ -145,21 +145,32 @@ body {
 
 .carousel{
   width: 100%;
-  height: auto;
+  height: 75vh;
   display: block;
-  margin-bottom: 30vh;
 }
 
 .carousel div{
   width: 100%;
-  height: auto;
 }
 .carousel div img{
   width: 100%;
 }
 #sdBeige{
      /* Asegúrate de que la imagen cubra completamente el contenedor */
+    object-fit: cover;
     object-position: 0 -65vh ;
+
+}
+#sdRed{
+  /* Asegúrate de que la imagen cubra completamente el contenedor */
+ object-fit: cover;
+
+}
+#sdCerv{
+  /* Asegúrate de que la imagen cubra completamente el contenedor */
+  /*object-position: 0 -65vh ;*/
+ object-fit: cover;
+
 }
 
 .carousel .thumbs-wrapper {
@@ -199,7 +210,7 @@ body {
   width: auto;
   height: auto;
   flex-direction: column;
-  margin-top: 10vh;
+  /*margin-top: 5vh;*/
   margin-bottom: 10vh;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -215,7 +226,7 @@ body {
   align-self: flex-start; 
   border-radius: 10px;
   align-items: center;
-   padding-right: 3vw;
+  padding-right: 3vw;
 
 }
 
@@ -237,4 +248,41 @@ body {
   width: 400px;
   transition: transform 0.3s ease; 
   cursor: pointer;
+}
+
+
+.rightContainer {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(200px); /* O -50px para left, 50px para right */
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+.leftContainer{
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(-200px); /* O -50px para left, 50px para right */
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
+.leftContainer.show,
+.rightContainer.show {
+  opacity: 1;
+  transform: translateX(0); /* Se mueve a su posición original */
+}
+
+.titleParraLeft {
+  margin-bottom: 1vh;
+  font-weight: 600;
+  text-align: left;
+}
+.titleParraRight{
+  margin-bottom: 1vh;
+  font-weight: 600;
+  text-align: Right;
+}
+
+.parraLeft {
+  text-align: left;
+}
+
+.parraRight{
+  text-align: right
 }
