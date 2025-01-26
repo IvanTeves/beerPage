@@ -7,11 +7,11 @@ export const NavBar = () => {
       }}>
         <img style={{height:'9vh',width:'9vw', paddingTop:'5px', paddingBottom:'5px', paddingLeft:'10px'}}src="Logoheader.svg" alt="" />
         <nav className="NavBar">
-          <a href="">Productos</a>
-          <a href="">Servicios</a>
-          <a href="">Sobre Nosotros</a>
-          <a href="">Nuestros Clientes</a>
-          <a href="">Contacto</a>
+          <a className="hover-underline" href="">Productos</a>
+          <a className="hover-underline" href="">Servicios</a>
+          <a className="hover-underline" href="">Sobre Nosotros</a>
+          <a className="hover-underline" href="">Nuestros Clientes</a>
+          <a className="hover-underline" href="">Contacto</a>
         </nav>
       </div>
 
