@@ -11,7 +11,6 @@ export const NavBar = () => {
           <a className="hover-underline" href="">Servicios</a>
           <a className="hover-underline" href="">Sobre Nosotros</a>
           <a className="hover-underline" href="">Nuestros Clientes</a>
-          <a className="hover-underline" href="">Contacto</a>
         </nav>
       </div>
 

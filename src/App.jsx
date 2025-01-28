@@ -62,16 +62,30 @@ function App() {
         </div>
 */}
         {<DemoCarousel />}
-        
+        <h3 className="productTitle">Nuestros productos</h3>
         <div className="productContainer">
 
           <div className="leftContainer">             
             <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto"/>
             <div>
-              <p className="titleParraLeft">Apa</p>
+              <p className="titleParraLeft">Golden Ale</p>
+              <div className="amargoFlexLeft">
+                <p>Amargor</p>
+                <div class="circle-container">
+                  <div class="circlePintado"></div>
+                  <div class="circlePintado"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <p className="leftAbv">ABV: 5%</p>
               <p className="parraLeft">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
-                atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
+                Delicada cerveza de intenso, profundo y cristalino color dorado,
+                de leve amargor y con inmenso poder para quitar la sed. Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo.
+                Ideal para acompañar unas buenas papas fritas.
               </p>
             </div>
           </div>
@@ -79,10 +93,24 @@ function App() {
           <div className="rightContainer">
             <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto" />
             <div>
-              <p className="titleParraRight">Apa</p>
+              <p className="titleParraRight">Honey</p>
+              <div className="amargoFlexRight">
+                <p>Amargor</p>
+                <div class="circle-container">
+                  <div class="circlePintado"></div>
+                  <div class="circlePintado"></div>
+                  <div class="circlePintado"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <p className="leftAbv">ABV: 5%</p>
               <p className="parraRight">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
-                atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
+                Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
+                otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. 
+                Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa.
               </p>
             </div>
           </div>
@@ -90,10 +118,24 @@ function App() {
           <div className="leftContainer">
             <img className="imgContainer zoomable"  src={'copia.png'} alt="producto"  />
             <div>
-              <p className="titleParraLeft">Apa</p>
+              <p className="titleParraLeft">American Amber Ale</p>
+              <div className="amargoFlexLeft">
+                <p>Amargor</p>
+                <div class="circle-container">
+                  <div class="circlePintado"></div>
+                  <div class="circlePintado"></div>
+                  <div class="circlePintado"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <p className="leftAbv">ABV: 5%</p>
               <p className="parraLeft">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque est esse reprehenderit quae delectus, ad fuga be
-                atae eius repudiandae autem nostrum quaerat quisquam ducimus adipisci eligendi fugiat. Porro, maiores sequi?
+                Cerveza color cobrizo con notas caramelizadas,
+                de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
+                Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas
               </p>
             </div>
           </div>
