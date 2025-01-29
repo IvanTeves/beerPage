@@ -293,25 +293,87 @@ body {
   display: flex;
   gap: 10px; /* Espaciado entre círculos */
 }
-
 .circle {
-  width: 1vw;
-  height: 1vw;
-  /*border: 1px solid rgb(255, 255, 255); /* Define un borde de 10px */
-  border-radius: 50%; /* Hace que sea un círculo */
-  background-color: lightgray; /* Color inicial del círculo */
-  cursor: pointer; /* Cambia el puntero a una mano para interacción */
-  transition: background-color 0.3s ease; /* Efecto de transición para el color */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  opacity: 0; /* Ocultos inicialmente */
+  transform: scale(0); /* Reducidos inicialmente */
+  animation: fadeInCircle 0.4s ease forwards;
 }
 
 .circlePintado {
-  width: 1vw;
-  height: 1vw;
-  /*border: 1px solid rgb(255, 255, 255);  Define un borde de 10px */
-  border-radius: 50%; /* Hace que sea un círculo */
-  background-color: rgba(107, 41, 0, 0.742); /* Color inicial del círculo */
-  cursor: pointer; /* Cambia el puntero a una mano para interacción */
-  transition: background-color 0.3s ease; /* Efecto de transición para el color */
+  background-color: rgba(255, 165, 0, 0.8);
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeInCircle 0.4s ease forwards;
+}
+
+@keyframes fadeInCircle {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Retrasos progresivos */
+.circle:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.circle:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.circle:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.circle:nth-child(5) {
+  animation-delay: 1s;
+}
+.circle:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.circle:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.circlePintado:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.circlePintado:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.circlePintado:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.circlePintado:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.circlePintado:nth-child(5) {
+  animation-delay: 1s;
+}
+.circlePintado:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.circlePintado:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.leftContainer.show .circle,
+.rightContainer.show .circle {
+  animation-play-state: running; /* Se asegura de que se activen */
+}
+
+.leftContainer.show .circlePintado,
+.rightContainer.show .circlePintado {
+  animation-play-state: running;
 }
 
 .amargoFlexLeft {
