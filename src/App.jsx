@@ -6,6 +6,7 @@ import { BsDisplay } from "react-icons/bs";
 import {DemoCarousel} from "./carousel";
 import ScrollImage from "./components/ScrollImage";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function App() {
@@ -14,32 +15,40 @@ function App() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Si el elemento es visible, añade la clase 'show'
             entry.target.classList.add("show");
+  
+            // Verifica si hay círculos dentro del contenedor
+            const circles = entry.target.querySelectorAll(".circle, .circlePintado");
+            circles.forEach((circle, index) => {
+              setTimeout(() => {
+                console.log(`Mostrando círculo ${index}`); // Debug
+                circle.classList.add("show");
+              }, index * 300); // Efecto progresivo
+            });
+  
           } else {
-            // Si el elemento deja de ser visible, elimina la clase 'show'
             entry.target.classList.remove("show");
+  
+            // Oculta los círculos cuando el contenedor desaparece
+            const circles = entry.target.querySelectorAll(".circle, .circlePintado");
+            circles.forEach((circle) => {
+              circle.classList.remove("show");
+            });
           }
         });
       },
-      { threshold: 0.25 } // Umbral del 10%
+      { threshold: 0.25 }
     );
-
-    const leftElements = document.querySelectorAll(".leftContainer");
-    const rightElements = document.querySelectorAll(".rightContainer");
-
-    // Observamos los elementos
-    leftElements.forEach((el) => observer.observe(el));
-    rightElements.forEach((el) => observer.observe(el));
-
-    // Cleanup para evitar fugas de memoria
+  
+    const containers = document.querySelectorAll(".leftContainer, .rightContainer");
+  
+    containers.forEach((el) => observer.observe(el));
+  
     return () => {
-      leftElements.forEach((el) => observer.unobserve(el));
-      rightElements.forEach((el) => observer.unobserve(el));
+      containers.forEach((el) => observer.unobserve(el));
     };
   }, []);
-
-
+  
   return (
     <>
       
@@ -141,6 +150,9 @@ function App() {
           </div>
 
         </div>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="floating-icon">
+          <img src="/wsp.png" alt="Icono fijo" className="floating-icon-img" />
+        </a>
       </main>
       <footer className="footer">
         <div  >

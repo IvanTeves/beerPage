@@ -289,91 +289,37 @@ body {
   text-align: left;
 }
 
-.circle-container {
+.circle-container{
   display: flex;
-  gap: 10px; /* Espaciado entre círculos */
-}
-.circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: 5px;
-  opacity: 0; /* Ocultos inicialmente */
-  transform: scale(0); /* Reducidos inicialmente */
-  animation: fadeInCircle 0.4s ease forwards;
+
+
 }
 
 .circlePintado {
-  background-color: rgba(255, 165, 0, 0.8);
+  margin-right: 0.5vw;
+  width: 1vw; /* Ajusta según sea necesario */
+  height: 1vw;
+  border-radius: 50%;
+  background-color: rgba(133, 64, 0, 0.649); /* Solo para pruebas */
   opacity: 0;
-  transform: scale(0);
-  animation: fadeInCircle 0.4s ease forwards;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-@keyframes fadeInCircle {
-  0% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+.circle{
+  margin-right: 0.5vw;
+  width: 1vw; /* Ajusta según sea necesario */
+  height: 1vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.381); /* Solo para pruebas */
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Retrasos progresivos */
-.circle:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.circle:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.circle:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.circle:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.circle:nth-child(5) {
-  animation-delay: 1s;
-}
-.circle:nth-child(6) {
-  animation-delay: 1.2s;
-}
-.circle:nth-child(7) {
-  animation-delay: 1.4s;
-}
-.circlePintado:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.circlePintado:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.circlePintado:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.circlePintado:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.circlePintado:nth-child(5) {
-  animation-delay: 1s;
-}
-.circlePintado:nth-child(6) {
-  animation-delay: 1.2s;
-}
-.circlePintado:nth-child(7) {
-  animation-delay: 1.4s;
-}
-
-.leftContainer.show .circle,
-.rightContainer.show .circle {
-  animation-play-state: running; /* Se asegura de que se activen */
-}
-
-.leftContainer.show .circlePintado,
-.rightContainer.show .circlePintado {
-  animation-play-state: running;
+.circle.show, .circlePintado.show {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .amargoFlexLeft {
@@ -412,4 +358,31 @@ body {
 .amargoFlexRight p {
   padding-right: 1vw;
   font-weight: 600;
+}
+
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  width: 60px;  /* Ajustá según el tamaño de tu imagen */
+  height: 60px;
+}
+
+.floating-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.floating-icon:hover {
+  transform: scale(1.3);
 }
