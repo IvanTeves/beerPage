@@ -91,15 +91,11 @@ body {
 }
 
 .footer{
-  background-color: #35292dff;
+  background-color: #c52026ff;
   /*background-color: #c52026ff;*/
-  height: 23vh;
+  height: 100%;
 }
-.footer div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 .footer p{
   margin-top: 3vh;
   margin-bottom: 5px;
@@ -414,6 +410,28 @@ body {
 }
 
 
+.footerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerDivImg{
+  margin-top: 2vh;
+  width: 50vh;
+  height: 20vh;
+  
+}
+.footerDir{
+  font-size: small;
+}
+
+.footerDivIcons {
+  margin-top: 4vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 @media (max-width: 480px) {
   html,body{

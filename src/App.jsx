@@ -158,16 +158,17 @@ function App() {
         </a>
       </main>
       <footer className="footer">
-        <div  >
-          <p>Direccion</p>
-          <a href="" className="iconosFooter">
-            <img src="/whatsapp.png" alt="" />
-            <p>:</p>
-          </a>
-          <a href="" className="iconosFooter">
-            <img src="/instagram.png" alt="" />
-            <p>:</p>
-          </a>
+        <div  className="footerDiv">
+          <img className="footerDivImg" src="banner.png" alt="" />
+          <p className="footerDir">Dirección: España 2045, Rosario, Santa Fe, Argentina</p>
+          <div className="footerDivIcons">
+            <a href="" className="iconosFooter">
+                <img src="/wspFooter.png" alt="" />
+            </a>
+            <a href="" className="iconosFooter">
+                <img src="/instaFooter.png" alt="" />
+            </a>
+          </div>
         </div>
       </footer>
 
