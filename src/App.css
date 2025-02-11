@@ -96,15 +96,6 @@ body {
   height: 100%;
 }
 
-.footer p{
-  margin-top: 3vh;
-  margin-bottom: 5px;
-  margin-left: 2%;
-  height: 0.5vh;  
-  /*color: #f6e6dbff;*/
-  color: white;
-}
-
 .cardContainer{
 
   display: flex;
@@ -398,7 +389,6 @@ body {
 
 .iconosFooter{
   margin-bottom: 1vh;
-  margin-left: 1vw;
   width: 3vw;
   height: 3vw;
 

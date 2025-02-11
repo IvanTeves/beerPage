@@ -162,10 +162,10 @@ function App() {
           <img className="footerDivImg" src="banner.png" alt="" />
           <p className="footerDir">Dirección: España 2045, Rosario, Santa Fe, Argentina</p>
           <div className="footerDivIcons">
-            <a href="" className="iconosFooter">
+            <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" className="iconosFooter">
                 <img src="/wspFooter.png" alt="" />
             </a>
-            <a href="" className="iconosFooter">
+            <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" className="iconosFooter">
                 <img src="/instaFooter.png" alt="" />
             </a>
           </div>
