@@ -148,6 +148,10 @@ function App() {
               </p>
             </div>
           </div>
+          <h3 className="productTitle">Servicios</h3>
+          <div className="barriles">
+              <img src="/barril.png" alt="" />
+          </div>
 
         </div>
         <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="floating-icon">
@@ -157,9 +161,14 @@ function App() {
       <footer className="footer">
         <div  >
           <p>Direccion</p>
-          <p>contacto</p>
-          <p>telefono</p>
-          <p>facebook</p>
+          <a href="" className="iconosFooter">
+            <img src="/whatsapp.png" alt="" />
+            <p>:</p>
+          </a>
+          <a href="" className="iconosFooter">
+            <img src="/instagram.png" alt="" />
+            <p>:</p>
+          </a>
         </div>
       </footer>
 
