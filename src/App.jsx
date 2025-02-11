@@ -160,7 +160,7 @@ function App() {
       <footer className="footer">
         <div  className="footerDiv">
           <img className="footerDivImg" src="banner.png" alt="" />
-          <p className="footerDir">Dirección: España 2045, Rosario, Santa Fe, Argentina</p>
+          <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
           <div className="footerDivIcons">
             <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" className="iconosFooter">
                 <img src="/wspFooter.png" alt="" />
