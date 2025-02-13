@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { TiShoppingCart } from "react-icons/ti";
-import { div } from "three/tsl";
 
 export const MenuHamburguesa = () => {
     
