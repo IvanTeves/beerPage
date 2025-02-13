@@ -7,7 +7,7 @@ import {DemoCarousel} from "./carousel";
 import ScrollImage from "./components/ScrollImage";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { MenuHamburguesa } from "./components/menuHamburguesa";
 
 function App() {
   useEffect(() => {
@@ -51,8 +51,10 @@ function App() {
   
   return (
     <>
-      
-      <NavBar />
+      <header className="header">
+        <NavBar />
+
+      </header>
       <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
         {/*<DemoCarousel />*/}
       

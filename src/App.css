@@ -423,10 +423,56 @@ body {
   justify-content: center;
 }
 
+.ImgMenu{
+    display: none;
+}
+
+.divNavbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgLogo{
+  height:9vh;
+  width:9vw;
+  padding-Top:5px; 
+  padding-Bottom:5px;
+   padding-Left:10px
+}
 @media (max-width: 480px) {
   html,body{
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
+  
+  .imgLogo{
+    height:9vh;
+    width:9vh;
+    padding-Top:5px; 
+    padding-Bottom:5px;
+     padding-Left:10px
+  }
+  .divNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Asegura que todo esté alineado verticalmente */
+    width: 100%; /* Opcional, pero puede ayudar a mantener el diseño */
+    padding: 10px; /* Opcional para mejor distribución */
+  }
+  
+  .NavBar {
+    display: none; /* Se mantiene oculta inicialmente */
+  }
+  
+  .ImgMenu {
+    width: 4vh; /* Aumentamos tamaño para mejor visibilidad */
+    height: 4vh;
+    display: flex;
+    align-items: center; /* Se asegura alineación con otros elementos */
+    justify-content: center;
+    cursor: pointer; /* Para indicar que es clickeable */
+    color: white;
+  }
+  
   .carousel{
     width: 100%;
     height: 20vh;
