@@ -83,13 +83,27 @@ function App() {
               <div className="amargoFlexLeft">
                 <p>Amargor</p>
                 <div class="circle-container">
-                  <div class="circlePintado"></div>
-                  <div class="circlePintado"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                  <div class="circlePintado">
+                     <img className="circlePintado" src="./lupulo.png" alt="" />
+                  </div>
+                  <div class="circlePintado">
+                     <img className="circlePintado" src="./lupulo.png" alt="" />
+                  </div>
+                  <div class="circle">
+                    <img className="circle" src="./lupulovacio.png" alt="" />
+                  </div>
+                  <div class="circle">
+                    <img className="circle" src="./lupulovacio.png" alt="" />
+                  </div>
+                  <div class="circle">
+                    <img className="circle" src="./lupulovacio.png" alt="" />
+                  </div>
+                  <div class="circle">
+                    <img className="circle" src="./lupulovacio.png" alt="" />
+                  </div>
+                  <div class="circle">
+                    <img className="circle" src="./lupulovacio.png" alt="" />
+                  </div>
                 </div>
               </div>
               <p className="leftAbv">ABV: 5%</p>
@@ -108,13 +122,27 @@ function App() {
               <div className="amargoFlexRight">
                 <p>Amargor</p>
                 <div class="circle-container">
-                  <div class="circlePintado"></div>
-                  <div class="circlePintado"></div>
-                  <div class="circlePintado"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                  <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
                 </div>
               </div>
               <p className="leftAbv">ABV: 5%</p>
@@ -133,13 +161,27 @@ function App() {
               <div className="amargoFlexLeft">
                 <p>Amargor</p>
                 <div class="circle-container">
-                  <div class="circlePintado"></div>
-                  <div class="circlePintado"></div>
-                  <div class="circlePintado"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
                 </div>
               </div>
               <p className="leftAbv">ABV: 5%</p>
