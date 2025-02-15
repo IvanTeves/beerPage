@@ -439,6 +439,58 @@ body {
   padding-Bottom:5px;
    padding-Left:10px
 }
+
+.divClientes{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+.divNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.ImgMenu {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 11vh;
+  right: 10px;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 2;
+  /* Ocultar por defecto */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;  /* Evita que se pueda hacer clic cuando está oculto */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.dropdownMenu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownMenu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
 @media (max-width: 480px) {
   html,body{
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
@@ -471,6 +523,7 @@ body {
     justify-content: center;
     cursor: pointer; /* Para indicar que es clickeable */
     color: white;
+    fill: white;
   }
   
   .carousel{

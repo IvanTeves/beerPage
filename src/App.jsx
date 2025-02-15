@@ -193,10 +193,26 @@ function App() {
             </div>
           </div>
         </div>
+
         <h3 className="productTitle">Servicios</h3>
         <div className="barriles">
               <img src="/barril.png" alt="" />
-          </div>
+        </div>
+
+        <h3 className="productTitle">Nuestros Clientes</h3>
+        <div className="divClientes">
+          <img src="./lasbirrasdejuan.png" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+
+        <h3 className="productTitle">Nuestra Historia</h3>
+        <div className="divClientes">
+          <img src="./lasbirrasdejuan.png" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+
         <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" rel="noopener noreferrer" className="floating-icon">
           <img src="/wsp.png" alt="Icono fijo" className="floating-icon-img" />
         </a>
