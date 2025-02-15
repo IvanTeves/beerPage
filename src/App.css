@@ -615,8 +615,8 @@ body {
 
   .circlePintado {
     margin-right: 0.5vh;
-    width: 2vh; /* Ajusta según sea necesario */
-    height: 2vh;
+    width: 3vh; /* Ajusta según sea necesario */
+    height: 3vh;
     /*border-radius: 50%;
     /*background-color: rgba(133, 64, 0, 0.649); /* Solo para pruebas */
     opacity: 0;
@@ -627,8 +627,8 @@ body {
   
   .circle{
     margin-right: 0.5vh;
-    width: 2vh; /* Ajusta según sea necesario */
-    height: 2vh;
+    width: 3vh; /* Ajusta según sea necesario */
+    height: 3vh;
     /*border-radius: 50%; */
     /*background-color: rgba(255, 255, 255, 0.381); /* Solo para pruebas */
     opacity: 0;
