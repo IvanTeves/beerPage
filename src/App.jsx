@@ -73,7 +73,7 @@ function App() {
         </div>
 */}
         {<DemoCarousel />}
-        <h3 className="productTitle">Nuestros productos</h3>
+        <h3 id="Productos"className="productTitle">Nuestros productos</h3>
         <div className="productContainer">
 
           <div className="leftContainer">             
@@ -194,19 +194,19 @@ function App() {
           </div>
         </div>
 
-        <h3 className="productTitle">Servicios</h3>
+        <h3 id="Servicios"className="productTitle">Servicios</h3>
         <div className="barriles">
               <img src="/barril.png" alt="" />
         </div>
 
-        <h3 className="productTitle">Nuestros Clientes</h3>
+        <h3 id="Nuestros"className="productTitle">Nuestros Clientes</h3>
         <div className="divClientes">
           <img src="./lasbirrasdejuan.png" alt="" />
           <img src="" alt="" />
           <img src="" alt="" />
         </div>
 
-        <h3 className="productTitle">Nuestra Historia</h3>
+        <h3 id="Sobre" className="productTitle">Nuestra Historia</h3>
         <div className="divClientes">
           <img src="./lasbirrasdejuan.png" alt="" />
           <img src="" alt="" />

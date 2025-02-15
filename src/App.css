@@ -210,10 +210,7 @@ body {
   transition: width 0.5s ease; /* Animación suave */
   
 }
-.hover-underline_Mobile:hover {
-  width: 100%; /* Expande la línea al pasar el mouse */
-  background-color: rgb(255, 255, 255);
-}
+
 .hover-underline_Mobile:hover::after {
   width: 100%; /* Expande la línea al pasar el mouse */
 }
@@ -489,7 +486,7 @@ body {
   position: absolute;
   top: 11vh;
   right:0px;
-  background: #35292dff;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   display: flex;
@@ -512,7 +509,7 @@ body {
 .dropdownMenu a {
   padding: 10px;
   /*text-decoration: none;*/
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   display: block;
   font-size: 1.5vh;
   font-weight: 600;
