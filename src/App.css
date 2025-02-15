@@ -193,6 +193,30 @@ body {
   width: 100%; /* Expande la línea al pasar el mouse */
 }
 
+.hover-underline_Mobile {
+  cursor: pointer; /* Opcional: Cambia el cursor al pasar el mouse */
+  display: inline-block; /* Asegura que la línea solo afecte al texto */
+  position: relative;
+}
+
+.hover-underline_Mobile::after {
+  content: ""; /* Necesario para el pseudo-elemento */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* Grosor de la línea */
+  background-color: rgb(180, 0, 0); /* Color de la línea */
+  transition: width 0.5s ease; /* Animación suave */
+  
+}
+.hover-underline_Mobile:hover {
+  width: 100%; /* Expande la línea al pasar el mouse */
+  background-color: rgb(255, 255, 255);
+}
+.hover-underline_Mobile:hover::after {
+  width: 100%; /* Expande la línea al pasar el mouse */
+}
 .productContainer{
   display: flex;
   width: auto;
@@ -464,9 +488,8 @@ body {
 .dropdownMenu {
   position: absolute;
   top: 11vh;
-  right: 10px;
-  background: white;
-  font-family: Arial, Helvetica, sans-serif;
+  right:0px;
+  background: #35292dff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   display: flex;
@@ -475,7 +498,7 @@ body {
   z-index: 2;
   /* Ocultar por defecto */
   opacity: 0;
-  transform: translateY(-10px);
+  /*transform: translateY(-10px);*/
   pointer-events: none;  /* Evita que se pueda hacer clic cuando está oculto */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -488,10 +511,14 @@ body {
 
 .dropdownMenu a {
   padding: 10px;
-  text-decoration: none;
-  color: black;
+  /*text-decoration: none;*/
+  color: rgb(255, 255, 255);
   display: block;
+  font-size: 1.5vh;
+  font-weight: 600;
 }
+
+
 @media (max-width: 480px) {
   html,body{
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */

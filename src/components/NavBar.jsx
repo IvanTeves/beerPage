@@ -26,10 +26,10 @@ export const NavBar = () => {
 
       {/* Menú desplegable con animación */}
       <div className={`dropdownMenu ${menuOpen ? "open" : ""}`}>
-        <a className = "hover-underline" href="">Productos</a>
-        <a className = "hover-underline" href="">Servicios</a>
-        <a className = "hover-underline" href="">Sobre Nosotros</a>
-        <a className="hover-underline" href="">Nuestros Clientes</a>
+        <a className = "hover-underline_Mobile" href="">Productos</a>
+        <a className = "hover-underline_Mobile" href="">Servicios</a>
+        <a className = "hover-underline_Mobile" href="">Sobre Nosotros</a>
+        <a className="hover-underline_Mobile" href="">Nuestros Clientes</a>
       </div>
     </div>
   );
