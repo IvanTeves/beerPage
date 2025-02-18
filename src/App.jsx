@@ -77,9 +77,9 @@ function App() {
         <div className="productContainer">
 
           <div className="leftContainer">             
-            <img  className="imgContainer zoomable"  src={'cervezaHell.png'} alt="producto"/>
+            <img  className="imgContainer zoomable"  src={'cervezaPorter.png'} alt="producto"/>
             <div>
-              <p className="titleParraLeft">Golden Ale</p>
+              <p className="titleParraLeft">Porter</p>
               <div className="amargoFlexLeft">
                 <p>Amargor</p>
                 <div class="circle-container">
@@ -116,9 +116,9 @@ function App() {
           </div>
 
           <div className="rightContainer">
-            <img  className="imgContainer zoomable"  src={'cervezaCalle2.png'} alt="producto" />
+            <img  className="imgContainer zoomable"  src={'cervezaAmericanIpa2.png'} alt="producto" />
             <div>
-              <p className="titleParraRight">Honey</p>
+              <p className="titleParraRight">American IPA</p>
               <div className="amargoFlexRight">
                 <p>Amargor</p>
                 <div class="circle-container">
@@ -155,7 +155,86 @@ function App() {
           </div>
 
           <div className="leftContainer">
-            <img className="imgContainer zoomable"  src={'cervezaFondosinBlanco.png'} alt="producto"  />
+            <img className="imgContainer zoomable"  src={'cervezaSweetBe.png'} alt="producto"  />
+            <div>
+              <p className="titleParraLeft">Sweetberries</p>
+              <div className="amargoFlexLeft">
+                <p>Amargor</p>
+                <div class="circle-container">
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circlePintado">
+                      <img className="circlePintado" src="./lupulo.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                    <div class="circle">
+                      <img className="circle" src="./lupulovacio.png" alt="" />
+                    </div>
+                </div>
+              </div>
+              
+              <p className="leftAbv">ABV: 5%</p>
+              <p className="parraLeft">
+                Cerveza color cobrizo con notas caramelizadas,
+                de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
+                Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas
+              </p>
+            </div>
+          </div>
+        
+          <div className="rightContainer">
+              <img  className="imgContainer zoomable"  src={'cervezaHoney.png'} alt="producto" />
+              <div>
+                <p className="titleParraRight">Honey</p>
+                <div className="amargoFlexRight">
+                  <p>Amargor</p>
+                  <div class="circle-container">
+                    <div class="circlePintado">
+                        <img className="circlePintado" src="./lupulo.png" alt="" />
+                      </div>
+                      <div class="circlePintado">
+                        <img className="circlePintado" src="./lupulo.png" alt="" />
+                      </div>
+                      <div class="circlePintado">
+                        <img className="circlePintado" src="./lupulo.png" alt="" />
+                      </div>
+                      <div class="circle">
+                        <img className="circle" src="./lupulovacio.png" alt="" />
+                      </div>
+                      <div class="circle">
+                        <img className="circle" src="./lupulovacio.png" alt="" />
+                      </div>
+                      <div class="circle">
+                        <img className="circle" src="./lupulovacio.png" alt="" />
+                      </div>
+                      <div class="circle">
+                        <img className="circle" src="./lupulovacio.png" alt="" />
+                      </div>
+                  </div>
+                </div>
+                  <p className="leftAbv">ABV: 5%</p>
+                  <p className="parraRight">
+                    Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
+                    otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. 
+                    Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa.
+                  </p>
+              </div>
+          </div>
+
+          <div className="leftContainer">
+            <img className="imgContainer zoomable"  src={'cervezasAAA.png'} alt="producto"  />
             <div>
               <p className="titleParraLeft">American Amber Ale</p>
               <div className="amargoFlexLeft">
@@ -184,6 +263,7 @@ function App() {
                     </div>
                 </div>
               </div>
+              
               <p className="leftAbv">ABV: 5%</p>
               <p className="parraLeft">
                 Cerveza color cobrizo con notas caramelizadas,
@@ -193,7 +273,6 @@ function App() {
             </div>
           </div>
         </div>
-
         <h3 id="Servicios"className="productTitle">Servicios</h3>
         <div className="barriles">
               <img src="/barril.png" alt="" />
