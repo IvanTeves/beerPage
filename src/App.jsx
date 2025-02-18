@@ -77,7 +77,7 @@ function App() {
         <div className="productContainer">
 
           <div className="leftContainer">             
-            <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto"/>
+            <img  className="imgContainer zoomable"  src={'cervezaFondosinBlanco.png'} alt="producto"/>
             <div>
               <p className="titleParraLeft">Golden Ale</p>
               <div className="amargoFlexLeft">
@@ -116,7 +116,7 @@ function App() {
           </div>
 
           <div className="rightContainer">
-            <img  className="imgContainer zoomable"  src={'copia.png'} alt="producto" />
+            <img  className="imgContainer zoomable"  src={'cervezaFondosinBlanco.png'} alt="producto" />
             <div>
               <p className="titleParraRight">Honey</p>
               <div className="amargoFlexRight">
@@ -155,7 +155,7 @@ function App() {
           </div>
 
           <div className="leftContainer">
-            <img className="imgContainer zoomable"  src={'copia.png'} alt="producto"  />
+            <img className="imgContainer zoomable"  src={'cervezaFondosinBlanco.png'} alt="producto"  />
             <div>
               <p className="titleParraLeft">American Amber Ale</p>
               <div className="amargoFlexLeft">
