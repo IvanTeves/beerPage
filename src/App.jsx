@@ -302,7 +302,7 @@ function App() {
 
         <h3 id="Sobre" className="productTitle">Nuestra Historia</h3>
         <div className="productContainer">
-           <div className="rightContainer">
+           <div className="rightContainer" style={{height:'100%'}}>
                 <img  className="imgContainer zoomable"  src={'logodiabla1.png'} alt="producto" />
                 <div>
                   <p className="titleParraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
