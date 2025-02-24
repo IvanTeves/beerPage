@@ -281,7 +281,7 @@ function App() {
         <h3 id="Servicios"className="productTitle">Servicios</h3>
         <div className="productContainer">
           <div className="leftContainer">
-                <img src="/barril2.png" className="imgContainer zoomable" alt="" />
+                <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
                 <div>
                   <p className="titleParraLeft">American Amber Ale</p>
                   <p className="parraLeft">

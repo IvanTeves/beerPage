@@ -118,14 +118,15 @@ body {
 
 .NavBar a {
   /*color: #f6e6dbff;*/
-  color: white;
+  color: black;
   margin-right:20px;
 }
 
 
 .header{
   text-Align: left;
-  background-Color:#35292dff;
+  background-Color:white;
+  /*background-Color:#35292dff;*/
   /*background-color: #c52026ff;*/
   width:100%;
   height : 11vh;
@@ -455,11 +456,17 @@ body {
 }
 
 .imgLogo{
-  height:9vh;
-  width:9vw;
+  height:3.775vw;
+  width:13vw;
   padding-Top:5px; 
   padding-Bottom:5px;
-   padding-Left:10px
+  padding-Left:10px;
+  margin-bottom: 2px;
+}
+
+.imgLogo2{
+
+  display: none;
 }
 
 .divClientes{
@@ -522,12 +529,24 @@ body {
   }
   
   .imgLogo{
-    height:9vh;
-    width:9vh;
+    height:4vh;
+    width:15vh;
+    margin-top: 20px;
     padding-Top:5px; 
     padding-Bottom:5px;
-    padding-Left:10px
+    padding-Left:10px;
+    display: none;
   }
+
+  .imgLogo2{
+    height:10vh;
+    width:10vh;
+    padding-Top:5px; 
+    padding-Bottom:5px;
+    padding-Left:10px;
+    display: block;
+  }
+
   .divNavbar {
     display: flex;
     justify-content: space-between;
