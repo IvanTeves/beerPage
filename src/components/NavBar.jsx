@@ -11,10 +11,10 @@ export const NavBar = () => {
 
       {/* Menú para pantallas grandes */}
       <nav className="NavBar">
-        <a className="hover-underline" href="#Productos">Productos</a>
-        <a className="hover-underline" href="#Servicios">Servicios</a>
-        <a className="hover-underline" href="#Sobre">Sobre Nosotros</a>
-        <a className="hover-underline" href="#Nuestros">Nuestros Clientes</a>
+        <a className="hover-underline oswald" href="#Productos">Productos</a>
+        <a className="hover-underline oswald" href="#Servicios">Servicios</a>
+        <a className="hover-underline oswald" href="#Sobre">Sobre Nosotros</a>
+        <a className="hover-underline oswald" href="#Nuestros">Nuestros Clientes</a>
       </nav>
 
       {/* Icono del menú para pantallas pequeñas */}

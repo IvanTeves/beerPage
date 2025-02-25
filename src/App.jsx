@@ -123,7 +123,7 @@ function App() {
           <div className="rightContainer">
             <img  className="imgContainer zoomable"  src={'cervezaAmericanIpa2.png'} alt="producto" />
             <div>
-              <p className="titleParraRight">American IPA</p>
+              <p className="titleparraRight">American IPA</p>
               <div className="amargoFlexRight">
                 <p>Amargor</p>
                 <div className="circle-container">
@@ -202,7 +202,7 @@ function App() {
           <div className="rightContainer">
               <img  className="imgContainer zoomable"  src={'cervezaHoney.png'} alt="producto" />
               <div>
-                <p className="titleParraRight">Honey</p>
+                <p className="titleparraRight">Honey</p>
                 <div className="amargoFlexRight">
                   <p>Amargor</p>
                   <div className="circle-container">
@@ -305,7 +305,7 @@ function App() {
            <div className="rightContainer" style={{height:'100%'}}>
                 <img  className="imgContainer zoomable"  src={'logodiabla1.png'} alt="producto" />
                 <div>
-                  <p className="titleParraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
+                  <p className="titleparraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
                     <p className="parraRight" style={{marginBottom:'0.5vh'}}>
                       Cervecería Santa Diabla nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. 
                     </p>

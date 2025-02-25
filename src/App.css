@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif; /* Fuente consistente */
+   /* Fuente consistente */
   line-height: 1.5; /* Espaciado consistente */
 }
 
@@ -21,6 +21,19 @@ body {
   font-style: normal;
 }
 
+.oswald{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 .hanken-grotesk {
   font-family: "Hanken Grotesk", serif;
@@ -168,6 +181,10 @@ body {
   display: none;
 }
 
+.carousel-status{
+  display: none;
+
+}
 .carousel .thumbs {
   display: none;
 }
@@ -279,16 +296,20 @@ body {
 }
 
 .titleParraLeft {
-  font-size: larger;
+  font-size: xxx-large;
   margin-bottom: 1vh;
   font-weight: 600;
   text-align: left;
+  font-style: italic;
+  margin-bottom: 40px;
 }
-.titleParraRight{
-  font-size: larger;
+.titleparraRight{
+  font-size: xxx-large;
   margin-bottom: 1vh;
   font-weight: 600;
   text-align: left;
+  font-style: italic;
+  margin-bottom: 40px;
 }
 
 .parraLeft {
@@ -631,7 +652,7 @@ body {
     padding-left: 2vw;
   }
 
-  .titleParraRight{
+  .titleparraRight{
     padding-left: 2vw;
   }
 
@@ -654,7 +675,7 @@ body {
     right: 20px;
     padding: 5px;
     border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.211);
+    background-color: #19980fff;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.781);
     cursor: pointer;
     display: flex;

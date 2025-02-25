@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-x: hidden; /* Evita el scroll horizontal */
-
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 h1 {
