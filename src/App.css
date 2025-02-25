@@ -63,6 +63,9 @@ body {
   text-align: center;
 }
 
+.underlineDiabla {
+  margin-right: 50px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -165,8 +168,7 @@ body {
 }
 #sdRed{
   /* Asegúrate de que la imagen cubra completamente el contenedor */
- object-fit: cover;
-
+ object-fit: contain;
 }
 #sdCerv{
   /* Asegúrate de que la imagen cubra completamente el contenedor */

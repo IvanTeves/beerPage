@@ -124,6 +124,7 @@ function App() {
             <img  className="imgContainer zoomable"  src={'cervezaAmericanIpa2.png'} alt="producto" />
             <div>
               <p className="titleparraRight">American IPA</p>
+              <img className="underlineDiabla " src="underline.svg" alt="" />
               <div className="amargoFlexRight">
                 <p>Amargor</p>
                 <div className="circle-container">
@@ -283,11 +284,15 @@ function App() {
           <div className="leftContainer">
                 <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
                 <div>
-                  <p className="titleParraLeft">American Amber Ale</p>
+                  <p className="titleParraLeft">Alquiler de barriles</p>
                   <p className="parraLeft">
-                  Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas
+                     Ofrecemos un servicio de alquiler de barriles diseñado especialmente para bares que buscan ampliar su oferta de cervezas sin necesidad de comprometerse con grandes volúmenes de compra.
+                </p>
+                 <p className="parraLeft">
+                    Contamos con una variedad de estilos y tamaños de barriles, adaptándonos a las necesidades de cada establecimiento. Además, el servicio puede incluir equipos de dispensado y asistencia técnica para garantizar un óptimo funcionamiento.
+                 </p>
+                 <p className="parraLeft">
+                    Esta opción permite a los bares ofrecer cervezas rotativas, probar nuevas marcas o cubrir demandas específicas en eventos y temporadas especiales.
                  </p>
                </div>
           </div>
