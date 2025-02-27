@@ -159,6 +159,7 @@ function App() {
                         </div>
                     </div>
                   </div>
+                  <p className="leftAbv" style={{padding:'1vw', textAlign:'left'}}>ABV: 5%</p>
                 <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
                   de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
                 </p>
@@ -167,7 +168,50 @@ function App() {
               <img className="img" src="cervezaHell.png" alt=""/>
             </div>
           </div>
+          <div className="leftContainer1">   
+            <div className="producto2">
+              <div className="texto-vertical"> BREWING CO. </div>
+              <div className="medio">
+                  <div className="divLinea">
+                      <p className="title"> AMERICAN IPA</p>
+                      <div className="linea"></div>   
+                  </div>
 
+                  <div className="amargoFlexRight" style={{marginBottom:'15vh'}}>
+                    <p>Amargor</p>
+                    <div className="circle-container">
+                      <div className="circlePintado">
+                          <img className="circlePintado" src="./lupulo.png" alt="" />
+                        </div>
+                        <div className="circlePintado">
+                          <img className="circlePintado" src="./lupulo.png" alt="" />
+                        </div>
+                        <div className="circlePintado">
+                          <img className="circlePintado" src="./lupulo.png" alt="" />
+                        </div>
+                        <div className="circle">
+                          <img className="circle" src="./lupulovacio.png" alt="" />
+                        </div>
+                        <div className="circle">
+                          <img className="circle" src="./lupulovacio.png" alt="" />
+                        </div>
+                        <div className="circle">
+                          <img className="circle" src="./lupulovacio.png" alt="" />
+                        </div>
+                        <div className="circle">
+                          <img className="circle" src="./lupulovacio.png" alt="" />
+                        </div>
+                    </div>
+                  </div>
+                  <p className="leftAbv" style={{padding:'1vw', textAlign:'left'}}>ABV: 5%</p>
+                <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
+                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
+                </p>
+                <p style={{padding:'1vw', textAlign:'left'}}>  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
+              </div>
+              <img className="img" src="cervezaHoney.png" alt=""/>
+            </div>
+          </div>
 
 
 
