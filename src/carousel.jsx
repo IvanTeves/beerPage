@@ -12,9 +12,6 @@ export class DemoCarousel extends Component {
                     <img  id="sdRed" src="bannerSantaDiabla.png" alt="Carousel 1" />                          
                 </div>
                 <div >
-                    <img id="sdBeige" src="Imagen3.png" alt="Carousel 2" />
-                </div>
-                <div >
                     <img  id="sdCerv"src="BannerCerveza.jpg" alt="Carousel 3" />
                 </div>
             </Carousel>

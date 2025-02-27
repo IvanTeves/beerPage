@@ -2,19 +2,23 @@ import { BiZoomIn } from "react-icons/bi"
 
 export const Card = ({imagen,titulo,precio,size}) => {
     return (
-        <div className="card"style={{width:size,
-            height:size,
-            margin: "1vw"
+        <div className="leftContainer">
+          
+            <div className="producto">
+            <div className="texto-vertical"> BREWING CO. </div>
+            <div className="medio">
+                <div className="divLinea">
+                    <p className="title"> AMERICAN IPA</p>
+                    <div className="linea"></div>   
+                </div>
 
-        }}>
-            <img   style={{
-                height: "200px", 
-                width: "200px", 
-                transition: "transform 0.3s ease", 
-                cursor: "pointer"
-            }}src={imagen} alt="producto"   className="zoomable" />
-            <h3 style={{color:"rgba(28, 24, 24, 0.81)"}}>{titulo}</h3>
-            <p style={{color:"rgba(28, 24, 24, 0.81)"}}>${precio}</p>
+                <p>amargor</p>
+                <p>Cerveza color cobrizo con notas caramelizadas,
+                de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
+                Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
+            </div>
+            <img className="img" src="cervezaFondosinBlanco.png" alt=""/>
+            </div>
         </div>
     )
 }

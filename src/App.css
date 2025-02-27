@@ -5,6 +5,120 @@
   box-sizing: border-box;
 }
 
+
+
+
+/*-------------------------------------------------------------------------------------------------*/
+.leftContainer1 {
+  display: flex;
+  margin-top: 10vh;
+  height: 75vh;
+  width: 80vw;
+  /*background-color: rgba(0, 0, 0, 0.271);*/
+  align-self: flex-start; 
+  border-radius: 10px;
+  align-items: center;
+  padding-right: 3vw;
+
+}
+
+.primero{
+  height: 70vh;
+  background-color: grey;
+  width: 10vw;
+}
+.medio{
+  display: flex;
+  height: 90vh;
+  background-color: rgb(30, 22, 22);
+  width: 25vw;
+  background-blend-mode: multiply;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-125%, -50%); /* Centra el segundo rectángulo */
+}
+
+.img{
+  width: 38vw;
+  height: 38vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -52.5%); /* Centra el segundo rectángulo */
+}
+
+.img:hover {
+  transform: translate(0%, -52.5%) scale(1.25); /* Aplica zoom sin desplazar */
+}
+
+.ultimo{
+  background-color: grey;
+  width: 50vw;
+  height: 70vh;
+
+}
+
+.producto{
+  margin-top: 10vh;
+  width: 90vw;
+  height: 80vh;
+  /*background-color: gray;*/
+  position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
+  background-color: rgba(0, 0, 0, 0.586);
+  background-image: url(etiqueta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  border-radius: 10px;
+}
+
+.texto-vertical {
+  background: linear-gradient(to bottom, rgb(30, 22, 22), rgba(80, 50, 50, 0.604));
+  /*background-color: rgb(30, 22, 22);*/
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-size: 24px;
+  color: white;
+  margin-left: 3%;
+  transform: translateY(112.5%) rotate(180deg); /* Centrado + Rotación */
+  height: 40vh;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.title{
+  font-size: xxx-large;
+  margin-bottom: 1vh;
+  font-weight: 600;
+  text-align: left;
+  font-style: italic;
+
+}
+
+.linea {
+  width: 30vw;
+  height: 2px;
+  background: linear-gradient(45deg, #FFD700, #FFC107, #B8860B);
+  /*background-color: #B8860B;*/
+  /*background-color: rgb(200, 187, 10);*/
+  border: none; /* Elimina el borde predeterminado */
+  position: absolute;
+  bottom: 10px; /* Centra el segundo rectángulo */
+  transform: translate(10%,0);
+}
+
+.divLinea{
+  margin-top: 10vh;
+  position: relative; /* Permite que la línea se posicione respecto a este */
+  display: inline-block; /* Ajusta el tamaño al contenido */
+   /* Evita que la línea se solape con otros elementos */
+  margin-bottom: 3vw;
+}
+/*-------------------------------------------------------------------------------------------------*/
 html {
   font-size: 16px; /* Tamaño base consistente */
 }
@@ -103,9 +217,10 @@ body {
 }
 
 .zoomable:hover {
-  transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
-}
 
+  transform: scale(1.5); /* Aumenta el tamaño 1.5 veces */
+
+}
 .footer{
   background-color: #c52026ff;
   /*background-color: #c52026ff;*/
@@ -251,7 +366,7 @@ body {
   margin-top: 10vh;
   height: 75vh;
   width: 65vw;
-  background-color: rgba(0, 0, 0, 0.271);
+  /*background-color: rgba(0, 0, 0, 0.271);*/
   align-self: flex-start; 
   border-radius: 10px;
   align-items: center;
@@ -291,7 +406,14 @@ body {
   transition: opacity 0.5s ease, transform 1.5s ease;
 }
 
+.leftContainer1{
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(-200px); /* O -50px para left, 50px para right */
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
 .leftContainer.show,
+.leftContainer1.show,
 .rightContainer.show {
   opacity: 1;
   transform: translateX(0); /* Se mueve a su posición original */
@@ -610,7 +732,7 @@ body {
     border-radius: 10px;
     align-items: center;
     padding-right: 3vw;
-    flex-direction: column;
+    flex-direction: column-reverse;
     PADDING: 0PX 50PX 50PX 50PX;
 
   }
@@ -624,8 +746,9 @@ body {
     border-radius: 10px;
     align-items: center;
     padding-right: 3vw;
-    flex-direction: column;
+    flex-direction: column-reverse;
     PADDING: 0PX 50PX 50PX 50PX;
+    
   }
   
   .imgContainer{
