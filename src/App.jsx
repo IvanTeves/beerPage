@@ -82,7 +82,7 @@ function App() {
         <div className="productContainer">
           <div className="leftContainer1">   
             <div className="producto">
-              <div className="texto-vertical"> BREWING CO. </div>
+              <div className="texto-vertical"> SANTA DIABLA. </div>
               <div className="medio">
                   <div className="divLinea">
                       <p className="title"> AMERICAN IPA</p>
