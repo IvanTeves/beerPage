@@ -68,13 +68,29 @@
   /*background-color: gray;*/
   position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
   background-color: rgba(0, 0, 0, 0.586);
-  background-image: url(etiqueta.jpg);
+  background-image: url(/etiqueta.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: multiply;
   border-radius: 10px;
 }
+
+.producto1{
+  margin-top: 10vh;
+  width: 90vw;
+  height: 80vh;
+  /*background-color: gray;*/
+  position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
+  background-color: rgba(0, 0, 0, 0.586);
+  background-image: url(/SantadiablaAPAfinal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  border-radius: 10px;
+}
+
 
 .texto-vertical {
   background: linear-gradient(to bottom, rgb(30, 22, 22), rgba(80, 50, 50, 0.604));
