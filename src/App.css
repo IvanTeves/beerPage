@@ -814,11 +814,12 @@ body {
     font-weight: 600;
     text-align: left;
     font-style: italic;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
+    transform: translateY(-82%);
   }
   
   .linea {
-    width: 30vw;
+    width: 83vw;
     height: 2px;
     background: linear-gradient(45deg, #FFD700, #FFC107, #B8860B);
     /*background-color: #B8860B;*/
@@ -826,7 +827,8 @@ body {
     border: none; /* Elimina el borde predeterminado */
     position: absolute;
     bottom: 10px; /* Centra el segundo rectángulo */
-    transform: translate(10%,0);
+    transform: translate(15%, -2000%);
+
   }
   
   .divLinea{
@@ -926,18 +928,18 @@ body {
   }
 
   .amargoFlexLeft p{
-    padding-left: 1vw;
+    margin-left: 3vw;
     margin-right: 1vh;
     font-size: 2.5vh;
   }
   .amargoFlexRight p{
-    padding-left: 1vw;
+    margin-left: 3vw;
     margin-right: 1vh;
     font-size: 2.5vh;
   }
 
   .leftAbv{
-    padding-left: 2vw;
+    margin-left: 3vw;
   }
 
   .parraLeft{
