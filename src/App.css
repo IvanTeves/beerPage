@@ -712,7 +712,7 @@ body {
     display: flex;
     height: 35vh;
     background-color: rgb(30, 22, 22);
-    width: 90vw;
+    width: 95vw;
     background-blend-mode: multiply;
     flex-direction: column;
     position: absolute;
@@ -766,11 +766,11 @@ body {
   }
   .rightContainer1.show,  .rightContainer.show {
       opacity: 1;
-      transform: translateX(-7%);
+      transform: translateX(-12%);
   }
   .leftContainer.show, .leftContainer1.show{
     opacity: 1;
-    transform: translateX(7%); 
+    transform: translateX(1%); 
   }
   .ultimo{
     background-color: grey;
