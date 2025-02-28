@@ -764,7 +764,14 @@ body {
     padding-right: 3vw;
     margin-bottom: 20vh ;
   }
-
+  .rightContainer1.show,  .rightContainer.show {
+      opacity: 1;
+      transform: translateX(-7%);
+  }
+  .leftContainer.show, .leftContainer1.show{
+    opacity: 1;
+    transform: translateX(7%); 
+  }
   .ultimo{
     background-color: grey;
     width: 50vw;
