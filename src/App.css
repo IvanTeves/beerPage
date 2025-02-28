@@ -766,7 +766,7 @@ body {
   }
   .rightContainer1.show,  .rightContainer.show {
       opacity: 1;
-      transform: translateX(-11%);
+      transform: translateX(-11.5%);
   }
   .leftContainer.show, .leftContainer1.show{
     opacity: 1;
