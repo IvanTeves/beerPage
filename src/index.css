@@ -24,9 +24,9 @@ a:hover {
 
 body {
   background-image: url('../public/lupulovacio.png');
-  background-color: white;
+  background-repeat: repeat;
   /*background-color: #f6e6dbff;*/
-  /*background-color:  rgba(53, 41, 45, 0.767);;*/
+  background-color:  rgba(53, 41, 45, 0.767);
   margin: 0;
   display: flex;
   place-items: center;

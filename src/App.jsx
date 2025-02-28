@@ -45,7 +45,7 @@ function App() {
       { threshold: 0.25 }
     );
   
-    const containers = document.querySelectorAll(".leftContainer1 , .leftContainer , .rightContainer");
+    const containers = document.querySelectorAll(".rightContainer1, .leftContainer1 , .leftContainer , .rightContainer");
   
     containers.forEach((el) => observer.observe(el));
   
@@ -61,415 +61,125 @@ function App() {
 
       </header>
       <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
-        {/*<DemoCarousel />*/}
-      
-       {/* <ScrollImage />*/}
-{/*
-        <div className="cardContainer">
-          
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-          <Card precio={'452'} titulo={'Ipa'} size={'100px'} imagen={'/Cerveza54.png'}/>
-
-        </div>
-*/}
         {<DemoCarousel />}
         <h3 id="Productos"className="productTitle">Nuestros productos</h3>
         <div className="productContainer">
-        <div className="leftContainer1">   
-            <div className="producto4">
-              <div className="texto-vertical"> SANTA DIABLA </div>
-              <div className="medio">
-                  <div className="divLinea">
-                      <p className="title"> WEST COAST IPA</p>
-                      <div className="linea"></div>   
-                  </div>
 
-                  <div className="amargoFlexRight" style={{marginBottom:'15vh',paddingLeft:'1vw'}}>
-                    <p>Amargor</p>
-                    <div className="circle-container">
-                      <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                    </div>
-                  </div>
-                <p className="leftAbv" style={{paddingLeft:'1vw', textAlign:'left'}}>ABV: 5%</p>
-                <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                </p>
-                <p style={{padding:'1vw', textAlign:'left'}}>  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
-              </div>
-              <img className="img" src="cervezaCalle2.png" alt=""/>
-            </div>
-          </div>
+          <Card
+            titulo="WEST COAST IPA"
+            fondo="/California.jpeg"
+            imgCerveza="cervezaCalle2.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                    de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={6}
+            direccion="leftContainer1"
+          />
 
-          <div className="leftContainer1">   
-            <div className="producto">
-              <div className="texto-vertical"> SANTA DIABLA </div>
-              <div className="medio">
-                  <div className="divLinea">
-                      <p className="title"> FIEBRE DE VERANO</p>
-                      <div className="linea"></div>   
-                  </div>
+          <Card
+            titulo="FIEBRE DE VERANO"
+            fondo="/etiqueta.jpg"
+            imgCerveza="cervezaFondosinBlanco.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+          />
+          <Card
+            titulo="AMERICAN PALE ALE"
+            fondo="/SantadiablaAPAfinal.jpg"
+            imgCerveza="cervezaHell.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                    de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={6}
+            direccion="leftContainer1"
+          />
 
-                  <div className="amargoFlexRight" style={{marginBottom:'15vh',paddingLeft:'1vw'}}>
-                    <p>Amargor</p>
-                    <div className="circle-container">
-                      <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                    </div>
-                  </div>
-                <p className="leftAbv" style={{paddingLeft:'1vw', textAlign:'left'}}>ABV: 5%</p>
-                <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                </p>
-                <p style={{padding:'1vw', textAlign:'left'}}>  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
-              </div>
-              <img className="img" src="cervezaFondosinBlanco.png" alt=""/>
-            </div>
-          </div>
-
-          <div className="leftContainer1">   
-            <div className="producto1">
-              <div className="texto-vertical"> SANTA DIABLA </div>
-              <div className="medio">
-                  <div className="divLinea">
-                      <p className="title"> AMERICAN PALE ALE</p>
-                      <div className="linea"></div>   
-                  </div>
-
-                  <div className="amargoFlexRight" style={{marginBottom:'15vh',paddingLeft:'1vw'}}>
-                    <p>Amargor</p>
-                    <div className="circle-container">
-                      <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                    </div>
-                  </div>
-                <p className="leftAbv" style={{paddingLeft:'1vw', textAlign:'left'}}>ABV: 5%</p>
-                <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                </p>
-                <p style={{padding:'1vw', textAlign:'left'}}>  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
-              </div>
-              <img className="img" src="cervezaHell.png" alt=""/>
-            </div>
-          </div>
-          <div className="leftContainer1">   
-            <div className="producto2">
-              <div className="texto-vertical"> SANTA DIABLA </div>
-              <div className="medio">
-                  <div className="divLinea">
-                      <p className="title"> GOLDEN</p>
-                      <div className="linea"></div>   
-                  </div>
-
-                  <div className="amargoFlexRight" style={{marginBottom:'15vh',marginLeft:'1vw'}}>
-                    <p>Amargor</p>
-                    <div className="circle-container">
-                      <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circlePintado">
-                          <img className="circlePintado" src="./lupulo.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                        <div className="circle">
-                          <img className="circle" src="./lupulovacio.png" alt="" />
-                        </div>
-                    </div>
-                  </div>
-
-                <p className="leftAbv" style={{paddingLeft:'1vw', textAlign:'left'}}>ABV: 5%</p>
-                <p style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left'}}>Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                </p>
-                <p style={{padding:'1vw', textAlign:'left'}}>  Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas</p>
-              </div>
-              <img className="img" src="cervezaHoney.png" alt=""/>
-            </div>
-          </div>
+          <Card
+            titulo="GOLDEN"
+            fondo="/Golden.jpg"
+            imgCerveza="cervezaHoney.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+          />
 
 
+          <Card
+            titulo="PORTER"
+            fondo="/Porter.jpg"
+            imgCerveza="cervezaPorter.png"
+            parra_1="Delicada cerveza de intenso, profundo y cristalino color dorado,
+                de leve amargor y con inmenso poder para quitar la sed."
+            parra_2=" Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo.
+                Ideal para acompañar unas buenas papas fritas."
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="leftContainer1"
+          />
 
+          <Card
+            titulo="AMERICAN IPA"
+            fondo="/IPA.jpg"
+            imgCerveza="cervezaAmericanIpa2.png"
+            parra_1="Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
+                otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada."
+            parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+          />
+
+          <Card
+            titulo="SWEETBERRIES"
+            fondo="/SB.jpg"
+            imgCerveza="cervezaSweetBe.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="leftContainer1"
+          />
           
-          <div className="leftContainer">             
-            <img  className="imgContainer zoomable"  src={'cervezaPorter.png'} alt="producto"/>
-            <div>
-              <p className="titleParraLeft">Porter</p>
-              <div className="amargoFlexLeft">
-                <p>Amargor</p>
-                <div className="circle-container">
-                  <div className="circlePintado">
-                     <img className="circlePintado" src="./lupulo.png" alt="" />
-                  </div>
-                  <div className="circlePintado">
-                     <img className="circlePintado" src="./lupulo.png" alt="" />
-                  </div>
-                  <div className="circle">
-                    <img className="circle" src="./lupulovacio.png" alt="" />
-                  </div>
-                  <div className="circle">
-                    <img className="circle" src="./lupulovacio.png" alt="" />
-                  </div>
-                  <div className="circle">
-                    <img className="circle" src="./lupulovacio.png" alt="" />
-                  </div>
-                  <div className="circle">
-                    <img className="circle" src="./lupulovacio.png" alt="" />
-                  </div>
-                  <div className="circle">
-                    <img className="circle" src="./lupulovacio.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <p className="leftAbv">ABV: 5%</p>
-              <p className="parraLeft">
-                Delicada cerveza de intenso, profundo y cristalino color dorado,
-                de leve amargor y con inmenso poder para quitar la sed. Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo.
-                Ideal para acompañar unas buenas papas fritas.
-              </p>
-            </div>
-          </div>
+          <Card
+            titulo="AMERICAN AMBER ALE"
+            fondo="/AAA.jpg"
+            imgCerveza="cervezasAAA.png"
+            parra_1=" Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
+                    otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. "
+            parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+          />
 
-          <div className="rightContainer">
-            <img  className="imgContainer zoomable"  src={'cervezaAmericanIpa2.png'} alt="producto" />
-            <div>
-              <p className="titleparraRight">American IPA</p>
-              <img className="underlineDiabla " src="underline.svg" alt="" />
-              <div className="amargoFlexRight">
-                <p>Amargor</p>
-                <div className="circle-container">
-                  <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                </div>
-              </div>
-              <p className="leftAbv">ABV: 5%</p>
-              <p className="parraRight">
-                Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
-                otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. 
-                Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa.
-              </p>
-            </div>
-          </div>
-
-          <div className="leftContainer">
-            <img className="imgContainer zoomable"  src={'cervezaSweetBe.png'} alt="producto"  />
-            <div>
-              <p className="titleParraLeft">Sweetberries</p>
-              <div className="amargoFlexLeft">
-                <p>Amargor</p>
-                <div className="circle-container">
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                </div>
-              </div>
-              
-              <p className="leftAbv">ABV: 5%</p>
-              <p className="parraLeft">
-                Cerveza color cobrizo con notas caramelizadas,
-                de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas
-              </p>
-            </div>
-          </div>
-        
-          <div className="rightContainer">
-              <img  className="imgContainer zoomable"  src={'cervezaHoney.png'} alt="producto" />
-              <div>
-                <p className="titleparraRight">Honey</p>
-                <div className="amargoFlexRight">
-                  <p>Amargor</p>
-                  <div className="circle-container">
-                    <div className="circlePintado">
-                        <img className="circlePintado" src="./lupulo.png" alt="" />
-                      </div>
-                      <div className="circlePintado">
-                        <img className="circlePintado" src="./lupulo.png" alt="" />
-                      </div>
-                      <div className="circlePintado">
-                        <img className="circlePintado" src="./lupulo.png" alt="" />
-                      </div>
-                      <div className="circle">
-                        <img className="circle" src="./lupulovacio.png" alt="" />
-                      </div>
-                      <div className="circle">
-                        <img className="circle" src="./lupulovacio.png" alt="" />
-                      </div>
-                      <div className="circle">
-                        <img className="circle" src="./lupulovacio.png" alt="" />
-                      </div>
-                      <div className="circle">
-                        <img className="circle" src="./lupulovacio.png" alt="" />
-                      </div>
-                  </div>
-                </div>
-                  <p className="leftAbv">ABV: 5%</p>
-                  <p className="parraRight">
-                    Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
-                    otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. 
-                    Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa.
-                  </p>
-              </div>
-          </div>
-
-          <div className="leftContainer">
-            <img className="imgContainer zoomable"  src={'cervezasAAA.png'} alt="producto"  />
-            <div>
-              <p className="titleParraLeft">American Amber Ale</p>
-              <div className="amargoFlexLeft">
-                <p>Amargor</p>
-                <div className="circle-container">
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circlePintado">
-                      <img className="circlePintado" src="./lupulo.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                    <div className="circle">
-                      <img className="circle" src="./lupulovacio.png" alt="" />
-                    </div>
-                </div>
-              </div>
-              
-              <p className="leftAbv">ABV: 5%</p>
-              <p className="parraLeft">
-                Cerveza color cobrizo con notas caramelizadas,
-                de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. 
-                Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas
-              </p>
-            </div>
-          </div>
         </div>
         <h3 id="Servicios"className="productTitle">Servicios</h3>
-        <div className="productContainer">
-          <div className="leftContainer">
+
+
+
+
+        <div className="productContainer" >
+
+          <div className="leftContainer" style={{backgroundImage:'url(/logoDiablaFondo.png)',  backgroundSize: "cover",
+                                                    backgroundRepeat: "no-repeat",
+                                                    backgroundPosition: "center",
+                                                    backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
                 <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
-                <div>
+                <div style={{backgroundColor:"black"}}>
                   <p className="titleParraLeft">Alquiler de barriles</p>
                   <p className="parraLeft">
                      Ofrecemos un servicio de alquiler de barriles diseñado especialmente para bares que buscan ampliar su oferta de cervezas sin necesidad de comprometerse con grandes volúmenes de compra.
-                </p>
+                  </p>
                  <p className="parraLeft">
                     Contamos con una variedad de estilos y tamaños de barriles, adaptándonos a las necesidades de cada establecimiento. Además, el servicio puede incluir equipos de dispensado y asistencia técnica para garantizar un óptimo funcionamiento.
                  </p>

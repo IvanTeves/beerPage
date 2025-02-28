@@ -22,11 +22,44 @@
   margin-bottom: 20vh ;
 }
 
-.primero{
-  height: 70vh;
-  background-color: grey;
-  width: 10vw;
+.rightContainer1{
+  display: flex;
+  height: 75vh;
+  margin-top: 10vh;
+  width: 80vw;
+  align-self: flex-end; 
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 3vw;
+  margin-bottom: 20vh ;
 }
+.leftContainer {
+  display: flex;
+  margin-top: 10vh;
+  height: 75vh;
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.271);
+  align-self: flex-start; 
+  border-radius: 10px;
+  align-items: center;
+  padding-right: 3vw;
+}
+
+.rightContainer {
+  display: flex;
+  height: 75vh;
+  margin-top: 10vh;
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.271);
+
+  align-self: flex-end; 
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 3vw;
+}
+
 .medio{
   display: flex;
   height: 90vh;
@@ -47,6 +80,8 @@
   top: 50%;
   left: 50%;
   transform: translate(0%, -52.5%); /* Centra el segundo rectángulo */
+  transition: transform 0.3s ease; 
+  cursor: pointer;
 }
 
 .img:hover {
@@ -67,53 +102,7 @@
   /*background-color: gray;*/
   position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
   background-color: rgba(0, 0, 0, 0.586);
-  background-image: url(/etiqueta.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: multiply;
-  border-radius: 10px;
-}
-
-.producto1{
-  margin-top: 10vh;
-  width: 90vw;
-  height: 80vh;
-  /*background-color: gray;*/
-  position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
-  background-color: rgba(0, 0, 0, 0.586);
-  background-image: url(/SantadiablaAPAfinal.jpg);
-  background-position: 20% 60%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  background-blend-mode: multiply;
-  border-radius: 10px;
-}
-
-.producto2{
-  margin-top: 10vh;
-  width: 90vw;
-  height: 80vh;
-  /*background-color: gray;*/
-  position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
-  background-color: rgba(0, 0, 0, 0.586);
-  background-image: url(/Golden.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: multiply;
-  border-radius: 10px;
-}
-
-.producto4{
-  margin-top: 10vh;
-  width: 90vw;
-  height: 80vh;
-  /*background-color: gray;*/
-  position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
-  background-color: rgba(0, 0, 0, 0.586);
-  background-image: url(/California.jpeg);
+  /*background-image: url(/etiqueta.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,7 +128,7 @@
 }
 
 .title{
-  font-size: xxx-large;
+  font-size: 6vh;
   margin-bottom: 1vh;
   font-weight: 600;
   text-align: left;
@@ -410,19 +399,6 @@ body {
   align-items: center;
 }
 
-.leftContainer {
-  display: flex;
-  margin-top: 10vh;
-  height: 75vh;
-  width: 65vw;
-  /*background-color: rgba(0, 0, 0, 0.271);*/
-  align-self: flex-start; 
-  border-radius: 10px;
-  align-items: center;
-  padding-right: 3vw;
-
-}
-
 .rightContainer {
   display: flex;
   height: 75vh;
@@ -449,6 +425,13 @@ body {
   transform: translateX(200px); /* O -50px para left, 50px para right */
   transition: opacity 0.5s ease, transform 1.5s ease;
 }
+
+.rightContainer1 {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(200px); /* O -50px para left, 50px para right */
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
 .leftContainer{
   opacity: 0; /* Inicialmente oculto */
   transform: translateX(-200px); /* O -50px para left, 50px para right */
@@ -461,6 +444,8 @@ body {
   transition: opacity 0.5s ease, transform 1.5s ease;
 }
 
+
+.rightContainer1.show,
 .leftContainer.show,
 .leftContainer1.show,
 .rightContainer.show {
@@ -722,7 +707,129 @@ body {
   html,body{
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
+  /* --------------------------------------------------------------------------------------------------------------*/
+  .medio{
+    display: flex;
+    height: 35vh;
+    background-color: rgb(30, 22, 22);
+    width: 90vw;
+    background-blend-mode: multiply;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translate(-5%, -50%);
+  }
+  .cardDesc{
+    display: none;
+  }
+
+  .img {
+    width: 38vh;
+    height: 38vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    transition: transform 0.3sease;
+    cursor: pointer;
+}
   
+  .img:hover {
+    transform: translate(-50%, 5%) scale(1.25); /* Aplica zoom sin desplazar */
+  }
+
+  .leftContainer1 {
+    display: flex;
+    margin-top: 10vh;
+    height: 75vh;
+    width: 80vw;
+    /*background-color: rgba(0, 0, 0, 0.271);*/
+    align-self: flex-start; 
+    border-radius: 10px;
+    align-items: center;
+    padding-right: 3vw;
+    margin-bottom: 20vh ;
+  }
+  
+  .rightContainer1{
+    display: flex;
+    height: 75vh;
+    margin-top: 10vh;
+    width: 80vw;
+    align-self: flex-end; 
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 3vw;
+    margin-bottom: 20vh ;
+  }
+
+  .ultimo{
+    background-color: grey;
+    width: 50vw;
+    height: 70vh;
+  
+  }
+  
+  .producto{
+    margin-top: 10vh;
+    width: 90vw;
+    height: 80vh;
+    /*background-color: gray;*/
+    position: relative; /* Para que el segundo rectángulo se posicione respecto a este */
+    background-color: rgba(0, 0, 0, 0.586);
+    /*background-image: url(/etiqueta.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+  }
+  
+  .texto-vertical {
+    background: linear-gradient(to bottom, rgb(30, 22, 22), rgba(80, 50, 50, 0.604));
+    /*background-color: rgb(30, 22, 22);*/
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    font-size: 24px;
+    color: white;
+    margin-left: 3%;
+    transform: translateY(180%) rotate(180deg); /* Centrado + Rotación */
+    height: 30vh;
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .title{
+    font-size: 4vh;
+    margin-bottom: 1vh;
+    font-weight: 600;
+    text-align: left;
+    font-style: italic;
+    margin-left: 1.5vw;
+  }
+  
+  .linea {
+    width: 30vw;
+    height: 2px;
+    background: linear-gradient(45deg, #FFD700, #FFC107, #B8860B);
+    /*background-color: #B8860B;*/
+    /*background-color: rgb(200, 187, 10);*/
+    border: none; /* Elimina el borde predeterminado */
+    position: absolute;
+    bottom: 10px; /* Centra el segundo rectángulo */
+    transform: translate(10%,0);
+  }
+  
+  .divLinea{
+    margin-top: 10vh;
+    position: relative; /* Permite que la línea se posicione respecto a este */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+     /* Evita que la línea se solape con otros elementos */
+    margin-bottom: 3vw;
+  }
+  /* --------------------------------------------------------------------------------------------------------------*/
   .imgLogo{
     height:4vh;
     width:15vh;
@@ -812,9 +919,14 @@ body {
   }
 
   .amargoFlexLeft p{
-    padding-left: 2vw;
+    padding-left: 1vw;
     margin-right: 1vh;
-    padding-right: 1vw;
+    font-size: 2.5vh;
+  }
+  .amargoFlexRight p{
+    padding-left: 1vw;
+    margin-right: 1vh;
+    font-size: 2.5vh;
   }
 
   .leftAbv{
@@ -831,11 +943,6 @@ body {
 
   .titleparraRight{
     padding-left: 2vw;
-  }
-
-  .amargoFlexRight p{
-    padding-left: 2vw;
-    margin-right: 1vh;
   }
 
   .hover-underline{
