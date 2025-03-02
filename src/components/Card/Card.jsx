@@ -1,3 +1,4 @@
+import { FiPlusCircle } from "react-icons/fi";
 
 export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPintados,direccion,imgX,imgY}) => {
     
@@ -24,6 +25,7 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
             <p className="cardDesc" style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left',fontSize:'2.4vh'}}>{parra_1} 
             </p>
             <p className="cardDesc" style={{padding:'1vw', textAlign:'left',fontSize:'2.4vh'}}>{parra_2}</p>
+            <FiPlusCircle className="plus"/>
           </div>
           <img className="img" src={imgCerveza} alt=""/>
         </div>

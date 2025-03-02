@@ -5,7 +5,10 @@
   box-sizing: border-box;
 }
 
-
+.plus:hover{
+  color: blue;
+  display: none;
+}
 
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -708,6 +711,25 @@ body {
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
   /* --------------------------------------------------------------------------------------------------------------*/
+  .plus:hover{
+    color: blue;
+    display:block;
+    height: 1vh;
+    width: 1vh;
+    position: relative;
+  }
+  
+  .plus{
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 4vh;
+    width: 4vh;
+    /* transform: translate(134%, -50%); */
+    margin-left: auto;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+  }
+  
   .medio{
     display: flex;
     height: 35vh;
