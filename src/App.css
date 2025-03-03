@@ -18,7 +18,13 @@
   display: none;
 }
 
-
+.divServicios{
+  background-image: linear-gradient(to right, rgb(30, 22, 22) 0%, rgb(30, 22, 22, .8) 100%);
+  height: 100%;
+  width: 100%;
+  padding: 3vw;
+  border-radius: 0 10px 10px 0  ;
+}
 /*-------------------------------------------------------------------------------------------------*/
 .leftContainer1 {
   display: flex;
@@ -54,22 +60,10 @@
   align-self: flex-start; 
   border-radius: 10px;
   align-items: center;
-  padding-right: 3vw;
+  /*padding-right: 3vw;*/
 }
 
-.rightContainer {
-  display: flex;
-  height: 75vh;
-  margin-top: 10vh;
-  width: 65vw;
-  background-color: rgba(0, 0, 0, 0.271);
 
-  align-self: flex-end; 
-  border-radius: 10px;
-  align-items: center;
-  flex-direction: row;
-  padding-right: 3vw;
-}
 
 .medio{
   display: flex;
@@ -294,11 +288,12 @@ body {
     width: 60vw;
     align-items: center;
     justify-content: flex-end;
+    margin-left: auto;
 }
 
 .NavBar a {
   /*color: #f6e6dbff;*/
-  color: black;
+  color: rgb(255, 255, 255);
   margin-right:20px;
 }
 
@@ -310,6 +305,7 @@ body {
   /*background-color: #c52026ff;*/
   width:100%;
   height : 11vh;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.907);
 }
 
 .carousel{
@@ -420,12 +416,17 @@ body {
   border-radius: 10px;
   align-items: center;
   flex-direction: row;
-  padding-right: 3vw;
 }
 
 .imgContainer{
   height: 400px;
   width: 400px;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+.imgContainerPuesto{
+  height: 30.35vw;
+  width: 17vw;
   transition: transform 0.3s ease; 
   cursor: pointer;
 }
@@ -483,6 +484,7 @@ body {
 
 .parraLeft {
   text-align: left;
+  margin-bottom: 0.5vw;
 }
 
 .parraRight{
@@ -551,7 +553,7 @@ body {
   font-weight: 600;
   margin-top: 10vh;
   height: 8vw;
-  background-color: rgba(0, 0, 0, 0.271);
+  background-color:  rgb(30, 22, 22);
 }
 
 .amargoFlexRight{
@@ -647,15 +649,14 @@ body {
 .divNavbar{
   display: flex;
   justify-content: space-between;
+  background-color:  rgb(30, 22, 22);
+  height: 100%;
 }
 
 .imgLogo{
-  height:3.775vw;
-  width:13vw;
-  padding-Top:5px; 
-  padding-Bottom:5px;
-  padding-Left:10px;
-  margin-bottom: 2px;
+  height:15vw;
+  width:15vw;
+  position: absolute;
 }
 
 .imgLogo2{
@@ -1048,12 +1049,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 5vw;
+    font-size: 5vh;
     font-weight: 600;
     margin-top: 2vh;
-    height: 8vw;
+    height: 8vh;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.271);
+
   }
   
 

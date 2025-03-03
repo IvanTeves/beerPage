@@ -70,7 +70,7 @@ export const Servicios = () => {
                                                     backgroundPosition: "center",
                                                     backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
                 <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
-                <div style={{backgroundColor:"black"}}>
+                <div className="divServicios">
                   <p className="titleParraLeft">Alquiler de barriles</p>
                   <p className="parraLeft">
                      Ofrecemos un servicio de alquiler de barriles diseñado especialmente para bares que buscan ampliar su oferta de cervezas sin necesidad de comprometerse con grandes volúmenes de compra.
@@ -83,21 +83,19 @@ export const Servicios = () => {
                  </p>
                </div>
           </div>
+          
           <div className="rightContainer" style={{backgroundImage:'url(/logoDiablaFondo.png)',  backgroundSize: "cover",
                                                     backgroundRepeat: "no-repeat",
                                                     backgroundPosition: "center",
                                                     backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
-                <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
-                <div style={{backgroundColor:"black"}}>
-                  <p className="titleParraLeft">Alquiler de barriles</p>
+                <img src="/Puesto.jpeg" style={{margin:'3vw'}} className="imgContainerPuesto zoomable" alt="" />
+                <div className="divServicios" >
+                  <p className="titleParraLeft">Presencias en eventos</p>
                   <p className="parraLeft">
-                     Ofrecemos un servicio de alquiler de barriles diseñado especialmente para bares que buscan ampliar su oferta de cervezas sin necesidad de comprometerse con grandes volúmenes de compra.
+                  En Santa Diabla, nos especializamos en llevar la mejor cerveza artesanal directamente a tu evento, brindando una experiencia única para todos tus invitados. 
                   </p>
                  <p className="parraLeft">
-                    Contamos con una variedad de estilos y tamaños de barriles, adaptándonos a las necesidades de cada establecimiento. Además, el servicio puede incluir equipos de dispensado y asistencia técnica para garantizar un óptimo funcionamiento.
-                 </p>
-                 <p className="parraLeft">
-                    Esta opción permite a los bares ofrecer cervezas rotativas, probar nuevas marcas o cubrir demandas específicas en eventos y temporadas especiales.
+                    Ya sea una fiesta privada, una boda, un festival o un evento corporativo, nuestra presencia garantiza que el sabor de nuestras cervezas premium transforme cualquier ocasión en un momento memorable.
                  </p>
                </div>
           </div>
