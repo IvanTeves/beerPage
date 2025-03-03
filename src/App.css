@@ -723,6 +723,13 @@ body {
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
   /* --------------------------------------------------------------------------------------------------------------*/  
+  .divServicios {
+    background-image: linear-gradient(to right, rgb(30, 22, 22) 0%, rgb(30, 22, 22, .8) 100%);
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+    border-radius: 10px 10px 0    0 ;
+}
   .plus {
       color: rgb(255, 255, 255);
       display: block;
@@ -930,10 +937,7 @@ body {
     align-self: center; 
     border-radius: 10px;
     align-items: center;
-    padding-right: 3vw;
     flex-direction: column-reverse;
-    PADDING: 0PX 50PX 50PX 50PX;
-
   }
   .rightContainer{
     display: flex;
@@ -944,9 +948,7 @@ body {
     align-self: center; 
     border-radius: 10px;
     align-items: center;
-    padding-right: 3vw;
     flex-direction: column-reverse;
-    PADDING: 0PX 50PX 50PX 50PX;
     
   }
   

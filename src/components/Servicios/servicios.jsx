@@ -1,10 +1,29 @@
 
-import {useEffect,useRef } from "react";
+import {useState,useEffect,useRef } from "react";
 import Swal from "sweetalert2";
+import { FiPlusCircle } from "react-icons/fi";
+import { FiMinusCircle } from "react-icons/fi";
 
 export const Servicios = () => {
     const serviciosRef = useRef(null);
-  
+    
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+    const [expanded, setExpanded] = useState(false);
+    
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 480);
+        };
+    
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+        }, []);
+
+        const toggleExpand = () => {
+        setExpanded(!expanded); // Cambia el estado al contrario
+    };
+
     // Agregar los estilos solo una vez
     useEffect(() => {
       const style = document.createElement("style");
@@ -82,6 +101,11 @@ export const Servicios = () => {
                     Esta opción permite a los bares ofrecer cervezas rotativas, probar nuevas marcas o cubrir demandas específicas en eventos y temporadas especiales.
                  </p>
                </div>
+                <div 
+                    onClick={toggleExpand} 
+                >
+                    {expanded ?  <FiMinusCircle className="plus"/> : <FiPlusCircle className="plus"/>}
+                </div>  
           </div>
           
           <div className="rightContainer" style={{backgroundImage:'url(/logoDiablaFondo.png)',  backgroundSize: "cover",
@@ -91,10 +115,16 @@ export const Servicios = () => {
                 <img src="/Puesto.jpeg" style={{margin:'3vw'}} className="imgContainerPuesto zoomable" alt="" />
                 <div className="divServicios" >
                   <p className="titleParraLeft">Presencias en eventos</p>
-                  <p className="parraLeft">
+                  <p className="parraLeft" style={{
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
+
+                    }}>
                   En Santa Diabla, nos especializamos en llevar la mejor cerveza artesanal directamente a tu evento, brindando una experiencia única para todos tus invitados. 
                   </p>
-                 <p className="parraLeft">
+                 <p className="parraLeft" style={{
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
+
+                 }}>
                     Ya sea una fiesta privada, una boda, un festival o un evento corporativo, nuestra presencia garantiza que el sabor de nuestras cervezas premium transforme cualquier ocasión en un momento memorable.
                  </p>
                </div>

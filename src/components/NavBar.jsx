@@ -7,7 +7,7 @@ export const NavBar = () => {
   return (
     <div className="divNavbar">
       <img className="imgLogo" src="logoHeader.png" alt="Logo" />
-      <img className="imgLogo2" src="LOGOBREWING.png" alt="Logo" />
+      <img className="imgLogo2" src="LogoMobile.png" alt="Logo" />
 
       {/* Menú para pantallas grandes */}
       <nav className="NavBar">

@@ -104,7 +104,7 @@ function App() {
           <Card
             titulo="GOLDEN"
             fondo="/Golden.jpg"
-            imgCerveza="cervezaHoney.png"
+            imgCerveza="cervezaGolden.png"
             parra_1="Cerveza color cobrizo con notas caramelizadas,
                   de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
