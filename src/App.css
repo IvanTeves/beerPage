@@ -93,7 +93,6 @@
   left: 50%;
   transform: translate(0%, -52.5%); /* Centra el segundo rectángulo */
   transition: transform 0.3s ease; 
-  cursor: pointer;
 }
 
 .img:hover {
@@ -767,7 +766,6 @@ body {
     left: 50%;
     transform: translate(-50%, 5%);
     transition: transform 0.3sease;
-    cursor: pointer;
 }
   
   .img:hover {

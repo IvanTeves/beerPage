@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { MenuHamburguesa } from "./components/menuHamburguesa";
 import { initMercadoPago } from '@mercadopago/sdk-react'
+import { Servicios } from "./components/Servicios/servicios";
 /*import { renderPaymentBrick } from "./components/Bricks/bricks";*/     
 /*import { Payment } from '@mercadopago/sdk-react';*/ 
 /*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/ 
@@ -164,31 +165,8 @@ function App() {
 
         </div>
         <h3 id="Servicios"className="productTitle">Servicios</h3>
-
-
-
-
-        <div className="productContainer" >
-
-          <div className="leftContainer" style={{backgroundImage:'url(/logoDiablaFondo.png)',  backgroundSize: "cover",
-                                                    backgroundRepeat: "no-repeat",
-                                                    backgroundPosition: "center",
-                                                    backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
-                <img src="/barrilAzul2.png" className="imgContainer zoomable" alt="" />
-                <div style={{backgroundColor:"black"}}>
-                  <p className="titleParraLeft">Alquiler de barriles</p>
-                  <p className="parraLeft">
-                     Ofrecemos un servicio de alquiler de barriles diseñado especialmente para bares que buscan ampliar su oferta de cervezas sin necesidad de comprometerse con grandes volúmenes de compra.
-                  </p>
-                 <p className="parraLeft">
-                    Contamos con una variedad de estilos y tamaños de barriles, adaptándonos a las necesidades de cada establecimiento. Además, el servicio puede incluir equipos de dispensado y asistencia técnica para garantizar un óptimo funcionamiento.
-                 </p>
-                 <p className="parraLeft">
-                    Esta opción permite a los bares ofrecer cervezas rotativas, probar nuevas marcas o cubrir demandas específicas en eventos y temporadas especiales.
-                 </p>
-               </div>
-          </div>
-        </div>
+          
+        <Servicios/>
 
         <h3 id="Nuestros"className="productTitle">Nuestros Clientes</h3>
         <div className="divClientes">
