@@ -51,7 +51,7 @@ export const Servicios = () => {
             observer.disconnect(); // Para que no se vuelva a ejecutar cada vez que haga scroll
           }
         },
-        { threshold: 0.5 } // 50% de la sección debe estar visible
+        { threshold: 0.2 } // 50% de la sección debe estar visible
       );
   
       if (serviciosRef.current) {
