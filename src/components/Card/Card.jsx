@@ -31,7 +31,6 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
           <div className="texto-vertical"> SANTA DIABLA </div>
           <div className= "medio" style={{
                                           height: isMobile ? (expanded ? "70vh" : "35vh") : "90vh",
-                                          zIndex: expanded ? 2 : 0,
                                           transition: "height 0.3s ease"
             }}>
               <div className="divLinea">
@@ -43,10 +42,16 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
                 <p>Amargor</p>
                 <div className="circle-container">{circulos}</div>
               </div>
-            <p className="leftAbv" style={{paddingLeft:'1vw', textAlign:'left' ,fontSize:'2.4vh'}}>ABV: {alcohol}</p>
-            <p className="cardDesc" style={{paddingLeft:'1vw',paddingRight:'1vw', textAlign:'left',fontSize:'2.4vh'}}>{parra_1} 
+            <p className="leftAbv" >ABV: {alcohol}</p>
+            <p className="cardDesc" style={{
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
+                                          transition: "height 0.3s ease"
+            }}>{parra_1} 
             </p>
-            <p className="cardDesc" style={{padding:'1vw', textAlign:'left',fontSize:'2.4vh'}}>{parra_2}</p>
+            <p className="cardDesc" style={{
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
+                                          transition: "height 0.3s ease"
+            }}>{parra_2}</p>
             <div 
                 onClick={toggleExpand} 
             >

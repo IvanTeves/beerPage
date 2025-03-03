@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+.cardDesc{
+  padding-Left:1vw;
+  padding-Right:1vw;
+  text-Align:left;
+  font-Size:2.4vh;
+  margin-bottom: 1vw;
+}
 
 .plus{
   color: blue;
@@ -75,6 +82,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-125%, -50%); /* Centra el segundo rectángulo */
+  z-index: 2;
 }
 
 .img{
@@ -530,6 +538,9 @@ body {
   font-weight: 200;
   text-align: left;
   font-size: medium;
+  padding-Left:1vw; 
+  text-Align:left;
+  font-Size:2.4vh;
 }
 
 .productTitle{
@@ -713,15 +724,23 @@ body {
   }
   /* --------------------------------------------------------------------------------------------------------------*/  
   .plus {
-    color: rgb(255, 255, 255);
-    display: block;
-    height: 2vh;
-    width: 2vh;
-    position: absolute;
-    right: 3vw;
-    bottom: 3vw;
+      color: rgb(255, 255, 255);
+      display: block;
+      height: 2vh;
+      width: 2vh;
+      position: absolute;
+      right: 3vw;
+      bottom: 3vw;
 
-}
+  }
+
+  .cardDesc{
+    margin-Left: 3vw;
+    padding-Right:1vw;
+    text-Align:left;
+    font-Size: 2.4vh;
+    margin-bottom: 3vw;
+  }
 
   .medio{
     display: flex;
