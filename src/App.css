@@ -740,6 +740,7 @@ body {
     text-Align:left;
     font-Size: 2.4vh;
     margin-bottom: 3vw;
+    transition: opacity 0.5s ease-in-out;
   }
 
   .medio{

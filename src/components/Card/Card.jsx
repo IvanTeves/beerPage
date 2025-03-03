@@ -45,12 +45,12 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
             <p className="leftAbv" >ABV: {alcohol}</p>
             <p className="cardDesc" style={{
                                           display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
-                                          transition: "height 0.3s ease"
+
             }}>{parra_1} 
             </p>
             <p className="cardDesc" style={{
-                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
-                                          transition: "height 0.3s ease"
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,             
+
             }}>{parra_2}</p>
             <div 
                 onClick={toggleExpand} 
