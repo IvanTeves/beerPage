@@ -1,11 +1,22 @@
 import { FiPlusCircle } from "react-icons/fi";
 import { FiMinusCircle } from "react-icons/fi";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPintados,direccion,imgX,imgY}) => {
     const [expanded, setExpanded] = useState(false); // Estado para expandir/plegar
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+    
+    
+    useEffect(() => {
+      const handleResize = () => {
+          setIsMobile(window.innerWidth < 480);
+      };
+    
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+       }, []);
 
-    const toggleExpand = () => {
+       const toggleExpand = () => {
         setExpanded(!expanded); // Cambia el estado al contrario
     };
 
@@ -18,10 +29,11 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
         <div className={direccion}>   
         <div className="producto" style={{ backgroundImage: `url(${fondo})` }}>
           <div className="texto-vertical"> SANTA DIABLA </div>
-          <div className= "medio" style={{height: expanded ? "85vh" : "35vh", 
-                                          zIndex: expanded ? "2" : "0"
-
-          }}>
+          <div className= "medio" style={{
+                                          height: isMobile ? (expanded ? "70vh" : "35vh") : "90vh",
+                                          zIndex: expanded ? 2 : 0,
+                                          transition: "height 0.3s ease"
+            }}>
               <div className="divLinea">
                   <p className="title"> {titulo}</p>
                   <div className="linea"></div>   
