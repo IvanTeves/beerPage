@@ -5,10 +5,7 @@
   box-sizing: border-box;
 }
 
-.plus:hover{
-  color: blue;
-  display: none;
-}
+
 .plus{
   color: blue;
   display: none;
@@ -714,11 +711,7 @@ body {
   html,body{
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
-  /* --------------------------------------------------------------------------------------------------------------*/
-  .plus:hover{
-    color: rgb(38, 38, 154);
-  }
-  
+  /* --------------------------------------------------------------------------------------------------------------*/  
   .plus {
     color: rgb(255, 255, 255);
     display: block;
