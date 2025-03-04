@@ -103,12 +103,11 @@ function App() {
           />
 
           <Card
-            titulo="GOLDEN"
+            titulo="GOLDEN ALE"
             fondo="/Golden.jpg"
             imgCerveza="cervezaGolden.png"
-            parra_1="Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
-            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            parra_1="Delicada cerveza de intenso, profundo y cristalino color dorado, de leve amargor y con inmenso poder para quitar la sed.  "
+            parra_2="Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo. Ideal para acompañar unas buenas papas fritas."
             alcohol="5%"
             circulosPintados={3}
             direccion="rightContainer1"
@@ -119,10 +118,8 @@ function App() {
             titulo="PORTER"
             fondo="/Porter.jpg"
             imgCerveza="cervezaPorter.png"
-            parra_1="Delicada cerveza de intenso, profundo y cristalino color dorado,
-                de leve amargor y con inmenso poder para quitar la sed."
-            parra_2=" Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo.
-                Ideal para acompañar unas buenas papas fritas."
+            parra_1="Robusta cerveza negra de gran carácter, con notas que recuerdan al café y al chocolate."
+            parra_2=" Un amargor moderado equilibra su maltoso y sedoso cuerpo que trae consigo una inmejorable espuma. Ideal para acompañar un buen corte de carne vacuna o de cerdo."
             alcohol="5%"
             circulosPintados={3}
             direccion="leftContainer1"
@@ -132,9 +129,8 @@ function App() {
             titulo="AMERICAN IPA"
             fondo="/IPA.jpg"
             imgCerveza="cervezaAmericanIpa2.png"
-            parra_1="Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
-                otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada."
-            parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
+            parra_1="Impactante cerveza de color dorado, de intenso y sabroso amargor que dejan detrás del mismo delicados sabores cítricos, frutales y resinosos."
+            parra_2=" La gran adición de lúpulos genera un aroma inconfundible del estilo y una espuma realmente consistente. Ideal para acompañar comidas picantes."
             alcohol="5%"
             circulosPintados={3}
             direccion="rightContainer1"
@@ -144,9 +140,7 @@ function App() {
             titulo="SWEETBERRIES"
             fondo="/SB.jpg"
             imgCerveza="cervezaSweetBe.png"
-            parra_1="Cerveza color cobrizo con notas caramelizadas,
-                  de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
-            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            parra_1=" Intrépida cerveza de color rubí con gran sabor a dulces frutos rojos. Ideal para degustar con algun postre frutal. "
             alcohol="5%"
             circulosPintados={3}
             direccion="leftContainer1"
@@ -156,13 +150,23 @@ function App() {
             titulo="AMERICAN AMBER ALE"
             fondo="/AAA.jpg"
             imgCerveza="cervezasAAA.png"
-            parra_1=" Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca,
-                    otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. "
+            parra_1=" Cerveza color cobrizo con notas caramelizadas, de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+          />
+          <Card
+            titulo="HONEY"
+            fondo="/Honey.jpg"
+            imgCerveza="cervezaHoney.png"
+            parra_1=" Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca, otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. "
             parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
             alcohol="5%"
             circulosPintados={3}
             direccion="rightContainer1"
           />
+
 
         </div>
         <h3 id="Servicios"className="productTitle">Servicios</h3>
