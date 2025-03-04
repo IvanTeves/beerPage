@@ -20,7 +20,7 @@ export const NavBar = () => {
       {/* Icono del menú para pantallas pequeñas */}
       <img 
         className="ImgMenu" 
-        src="/menuBlack.png" 
+        src="/menu.png" 
         alt="Menú" 
         onClick={() => setMenuOpen(!menuOpen)}
       />

@@ -967,14 +967,15 @@ body {
   }
   
   .ImgMenu {
-    width: 4vh; /* Aumentamos tamaño para mejor visibilidad */
-    height: 4vh;
+    width: 5vh; /* Aumentamos tamaño para mejor visibilidad */
+    height: 5vh;
     display: flex;
     align-items: center; /* Se asegura alineación con otros elementos */
     justify-content: center;
     cursor: pointer; /* Para indicar que es clickeable */
     color: white;
     fill: white;
+    margin-right: 4vw;
   }
   
   .carousel{
