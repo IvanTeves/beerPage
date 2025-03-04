@@ -24,6 +24,8 @@
   padding: 20px;
 }
 .bannerImg{
+  opacity: 0;
+  transition: opacity 1s 0s ease-in-out;
   background-image: url("/BannerNuevo2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -32,11 +34,14 @@
   height: 90vh;
   margin-top: 11vh;
 }
+.bannerImg.visible {
+  opacity: 1;
+}
 .cardDesc{
   padding-Left:1vw;
   padding-Right:1vw;
   text-Align:left;
-  font-Size:2.4vh;
+  font-Size:1.1vw;
   margin-bottom: 1vw;
 }
 
@@ -56,7 +61,7 @@
 .leftContainer1 {
   display: flex;
   margin-top: 10vh;
-  height: 75vh;
+  height: 100%;
   width: 80vw;
   /*background-color: rgba(0, 0, 0, 0.271);*/
   align-self: flex-start; 
@@ -160,7 +165,7 @@
 }
 
 .title{
-  font-size: 6vh;
+  font-size: 2.5vw;
   margin-bottom: 1vh;
   font-weight: 600;
   text-align: left;
@@ -458,6 +463,7 @@ body {
   width: 17vw;
   transition: transform 0.3s ease; 
   cursor: pointer;
+  border-radius: 10px;
 }
 
 
@@ -495,7 +501,7 @@ body {
 }
 
 .titleParraLeft {
-  font-size: xxx-large;
+  font-size: 2.5vw;
   margin-bottom: 1vh;
   font-weight: 600;
   text-align: left;
@@ -514,10 +520,12 @@ body {
 .parraLeft {
   text-align: left;
   margin-bottom: 0.5vw;
+  font-size: 1.1vw;
 }
 
 .parraRight{
   text-align: left;
+  font-size: 2.4vh;
 }
 
 .circle-container{
@@ -846,6 +854,16 @@ body {
       opacity: 1;
       transform: translateX(-11.5%);
   }
+
+  .rightContainer.show {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.leftContainer.show{
+  opacity: 1;
+  transform: translateX(0%); 
+}
   .leftContainer.show, .leftContainer1.show{
     opacity: 1;
     transform: translateX(1%); 
@@ -997,7 +1015,7 @@ body {
   }
   
   .titleParraLeft{
-    padding-left: 2vw;
+    padding-left: 2.5vw;
   }
 
   .amargoFlexLeft p{
