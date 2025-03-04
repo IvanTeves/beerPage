@@ -91,6 +91,7 @@
   align-items: center;
   padding-right: 3vw;
   margin-bottom: 20vh ;
+  
 }
 
 .rightContainer1{
@@ -104,7 +105,9 @@
   flex-direction: row;
   padding-right: 3vw;
   margin-bottom: 20vh ;
+
 }
+
 .leftContainer {
   display: flex;
   margin-top: 10vh;
@@ -170,6 +173,7 @@
   background-position: center;
   background-blend-mode: multiply;
   border-radius: 10px;
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -526,6 +530,7 @@ body {
 .rightContainer.show {
   opacity: 1;
   transform: translateX(0); /* Se mueve a su posición original */
+
 }
 
 .titleParraLeft {
@@ -963,6 +968,7 @@ body {
     background-position: center;
     background-blend-mode: multiply;
     border-radius: 10px;
+    
   }
   
   .texto-vertical {
