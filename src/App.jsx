@@ -3,7 +3,7 @@ import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Card } from "./components/Card/Card";
 import { BsDisplay } from "react-icons/bs";
-import {DemoCarousel} from "./carousel";
+import {ImgBanner} from "./carousel";
 import ScrollImage from "./components/ScrollImage";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -62,7 +62,7 @@ function App() {
 
       </header>
       <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
-        {<DemoCarousel />}
+        <ImgBanner />
         <h3 id="Productos"className="productTitle">Nuestros productos</h3>
         <div className="productContainer">
 

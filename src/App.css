@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+.bannerImg{
+  background-image: url("BannerNuevo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* o 'cover' según lo que quieras */
+  width: 100%;
+  height: 90vh;
+  margin-top: 11vh;
+}
 .cardDesc{
   padding-Left:1vw;
   padding-Right:1vw;
@@ -305,7 +314,9 @@ body {
   /*background-color: #c52026ff;*/
   width:100%;
   height : 11vh;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.907);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.907);
+  z-index: 1000;
+  position: absolute;
 }
 
 .carousel{
@@ -551,7 +562,6 @@ body {
   text-align: center;
   font-size: 5vw;
   font-weight: 600;
-  margin-top: 10vh;
   height: 8vw;
   background-color:  rgb(30, 22, 22);
 }
@@ -723,6 +733,15 @@ body {
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
   /* --------------------------------------------------------------------------------------------------------------*/  
+  .bannerImg{
+    background-image: url("bannerMobile2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* o 'cover' según lo que quieras */
+    width: 100%;
+    height: 90vh;
+    margin-top: 11vh;
+  }
   .divServicios {
     background-image: linear-gradient(to right, rgb(30, 22, 22) 0%, rgb(30, 22, 22, .8) 100%);
     height: 100%;
