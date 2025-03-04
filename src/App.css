@@ -6,7 +6,7 @@
 }
 
 .bannerImg{
-  background-image: url("BannerNuevo2.png");
+  background-image: url("/BannerNuevo2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* o 'cover' según lo que quieras */
