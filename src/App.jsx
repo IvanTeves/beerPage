@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import { MenuHamburguesa } from "./components/menuHamburguesa";
 import { initMercadoPago } from '@mercadopago/sdk-react'
 import {ProductPopUp} from './components/ContenedorServicios/ProductPopUp.jsx';
-
+import { NuestraHistoria } from "./components/NuestraHistoria/NuestraHistoria.jsx";
 /*import { renderPaymentBrick } from "./components/Bricks/bricks";*/     
 /*import { Payment } from '@mercadopago/sdk-react';*/ 
 /*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/ 
@@ -170,39 +170,26 @@ function App() {
         <ProductPopUp/>
         
 
-        <h3 id="Nuestros"className="productTitle">Nuestros Clientes</h3>
+        <h3 id="Nuestros"className="productTitle">Confían en nosotros</h3>
         <div className="divClientes">
-          <img src="./lasbirrasdejuan.png" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img className = "imgCliente" src="./lasbirrasdejuan.png" alt="" />
+          <img className = "imgCliente" src="/N40.jpeg" alt="" />
+          <img className = "imgCliente" src="/GROWLER.jpeg" alt="" />
+          <img className = "imgCliente" src="/borussia.jpg" alt="" />
+          <img className = "imgCliente" src="/bar46.jpg" alt="" />
+          <img className = "imgCliente" src="/refugio.png" alt="" />
         </div>
 
         <h3 id="Sobre" className="productTitle">Nuestra Historia</h3>
-        <div className="productContainer">
-           <div className="rightContainer" style={{height:'100%'}}>
-                <img  className="imgContainer zoomable"  src={'logodiabla1.png'} alt="producto" />
-                <div>
-                  <p className="titleparraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
-                    <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-                      Cervecería Santa Diabla nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. 
-                    </p>
-                    <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-                      Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores.
-                    </p>
-                    <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-                      Los productos son elaborados en su planta productiva, ubicada en la ciudad de Rosario, donde cada paso es realizado y controlado de forma personal. 
-                    </p>
-                    <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-                    La cerveza es realmente artesanal, cada estilo parte de una única e inigualable receta. Todas nuestras materias primas son cuidadosamente seleccionadas y manipuladas. 
-                    </p>
-                    <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-                    Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. 
-                    </p>
-                    <p> Salud!</p>
-                  
-                </div>
-            </div>
-        </div>
+        <NuestraHistoria
+          parra_1="Cervecería Santa Diabla nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. "
+          parra_2="Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores."
+          parra_3="Los productos son elaborados en su planta productiva, ubicada en la ciudad de Rosario, donde cada paso es realizado y controlado de forma personal. "
+          parra_4="La cerveza es realmente artesanal, cada estilo parte de una única e inigualable receta. Todas nuestras materias primas son cuidadosamente seleccionadas y manipuladas. "
+          parra_5 = "Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. "
+          parra_6 = "¡Salud!"        
+        />
+
 
         <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" rel="noopener noreferrer" className="floating-icon">
           <img src="/wsp.png" alt="Icono fijo" className="floating-icon-img" />
@@ -210,7 +197,7 @@ function App() {
       </main>
       <footer className="footer">
         <div  className="footerDiv">
-          <img className="footerDivImg" src="banner.png" alt="" />
+          <img className="footerDivImg" src="logoHeader.png" alt="" />
           <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
           <div className="footerDivIcons">
             <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" className="iconosFooter">
@@ -228,3 +215,32 @@ function App() {
 }
 
 export default App;
+
+/*
+
+<div className="productContainer">
+<div className="rightContainer" style={{height:'100%'}}>
+     <img  className="imgContainer zoomable"  src={'logodiabla1.png'} alt="producto" />
+     <div>
+       <p className="titleparraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
+         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
+           Cervecería Santa Diabla nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. 
+         </p>
+         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
+           Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores.
+         </p>
+         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
+           Los productos son elaborados en su planta productiva, ubicada en la ciudad de Rosario, donde cada paso es realizado y controlado de forma personal. 
+         </p>
+         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
+         La cerveza es realmente artesanal, cada estilo parte de una única e inigualable receta. Todas nuestras materias primas son cuidadosamente seleccionadas y manipuladas. 
+         </p>
+         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
+         Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. 
+         </p>
+         <p> Salud!</p>
+       
+     </div>
+ </div>
+</div>
+*/
