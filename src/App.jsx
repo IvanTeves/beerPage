@@ -67,18 +67,6 @@ function App() {
         <div className="productContainer">
 
           <Card
-            titulo="WEST COAST IPA"
-            fondo="/California.jpeg"
-            imgCerveza="cervezaCalle2.png"
-            parra_1="Cerveza color cobrizo con notas caramelizadas,
-                    de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
-            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
-            alcohol="5%"
-            circulosPintados={6}
-            direccion="leftContainer1"
-          />
-
-          <Card
             titulo="FIEBRE DE VERANO"
             fondo="/etiqueta.jpg"
             imgCerveza="cervezaFondosinBlanco.png"
@@ -87,8 +75,20 @@ function App() {
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
             circulosPintados={3}
+            direccion="leftContainer1"
+          />
+          <Card
+            titulo="WEST COAST IPA"
+            fondo="/California.jpeg"
+            imgCerveza="cervezaCalle2.png"
+            parra_1="Cerveza color cobrizo con notas caramelizadas,
+                    de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
+            parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
+            alcohol="5%"
+            circulosPintados={6}
             direccion="rightContainer1"
           />
+
           <Card
             titulo="AMERICAN PALE ALE"
             fondo="/SantadiablaAPAfinal.jpg"
