@@ -3,10 +3,11 @@ export const ImgBanner = () => {
 return(
      
  <div className="bannerImg" >
-    
+  
  </div>
 )
 }
+  /*<img src="" alt="" />*/
 /*
 export class DemoCarousel extends Component {
     render() {
