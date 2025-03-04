@@ -9,7 +9,8 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { MenuHamburguesa } from "./components/menuHamburguesa";
 import { initMercadoPago } from '@mercadopago/sdk-react'
-import { Servicios } from "./components/Servicios/servicios";
+import {ProductPopUp} from './components/ContenedorServicios/ProductPopUp.jsx';
+
 /*import { renderPaymentBrick } from "./components/Bricks/bricks";*/     
 /*import { Payment } from '@mercadopago/sdk-react';*/ 
 /*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/ 
@@ -166,7 +167,8 @@ function App() {
         </div>
         <h3 id="Servicios"className="productTitle">Servicios</h3>
           
-        <Servicios/>
+        <ProductPopUp/>
+        
 
         <h3 id="Nuestros"className="productTitle">Nuestros Clientes</h3>
         <div className="divClientes">

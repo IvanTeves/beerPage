@@ -49,6 +49,10 @@
   color: blue;
   display: none;
 }
+.plus2{
+  color: blue;
+  display: none;
+}
 
 .divServicios{
   background-image: linear-gradient(to right, rgb(30, 22, 22) 0%, rgb(30, 22, 22, .8) 100%);
@@ -464,6 +468,8 @@ body {
   transition: transform 0.3s ease; 
   cursor: pointer;
   border-radius: 10px;
+
+  margin: 3vw;
 }
 
 
@@ -759,6 +765,17 @@ body {
     overflow-x: hidden; /* Previene el scroll horizontal en toda la página */
   }
   /* --------------------------------------------------------------------------------------------------------------*/  
+  .imgContainerPuesto{
+    height: 30.35vh;
+    width: 17vh;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+  
+  
   .bannerImg{
     background-image: url("/bannerMobile2.png");
     background-position: center;
@@ -785,6 +802,16 @@ body {
       bottom: 3vw;
 
   }
+
+  .plus2 {
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 3vh;
+    width: 3vh;
+    margin-left: auto;
+    right: 3vw;
+    bottom: 3vw;
+}
 
   .cardDesc{
     margin-Left: 3vw;
