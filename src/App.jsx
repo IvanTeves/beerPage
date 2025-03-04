@@ -164,7 +164,7 @@ function App() {
             parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
             alcohol="5%"
             circulosPintados={3}
-            direccion="rightContainer1"
+            direccion="leftContainer1"
           />
 
 
