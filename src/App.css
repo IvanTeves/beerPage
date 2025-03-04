@@ -734,7 +734,7 @@ body {
   }
   /* --------------------------------------------------------------------------------------------------------------*/  
   .bannerImg{
-    background-image: url("bannerMobile2.png");
+    background-image: url("/bannerMobile2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* o 'cover' según lo que quieras */
