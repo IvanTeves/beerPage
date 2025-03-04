@@ -24,48 +24,23 @@ export const Servicios = () => {
         setExpanded(!expanded); // Cambia el estado al contrario
     };
 
-    // Agregar los estilos solo una vez
-    useEffect(() => {
-      const style = document.createElement("style");
-      style.innerHTML = `
-        .swal2-image {
-          width: 35vh;  /* Ocupará el 40% del ancho de la pantalla */
-          height: 70vh; /* Mantendrá la proporción */
-          max-width: 400px; /* No será más grande de 400px */
-        }
-  
-        @media (max-width: 768px) {
-          .swal2-image {
-          width: 35vh;  /* Ocupará el 40% del ancho de la pantalla */
-          height: 70vh;
-          }
-        }
-  
-        @media (max-width: 480px) {
-          .swal2-image {
-          width: 35vh;  /* Ocupará el 40% del ancho de la pantalla */
-          height: 70vh;
-          }
-        }
-      `;
-      document.head.appendChild(style);
-  
-      // Limpiar cuando el componente se desmonte
-      return () => {
-        document.head.removeChild(style);
-      };
-    }, []);
-  
     useEffect(() => {
       const observer = new IntersectionObserver(
         (entries) => {
           const entry = entries[0];
           if (entry.isIntersecting) {
             Swal.fire({
-              title: "Bienvenido a Servicios",
-              text: "Aquí te mostramos nuestros mejores servicios.",
-              imageUrl: "/serviciosFondo.jpeg",
-              confirmButtonText: "¡Entendido!",
+                title: 'Nuestros Servicios',
+                text: 'Aquí te mostramos nuestros mejores servicios.',
+                imageUrl: '/serviciosFondo.jpeg',
+                imageAlt: 'Imagen de servicios',
+                confirmButtonText: '¡Entendido!',
+                customClass: {
+                    popup: 'my-popup', // Clase para el contenedor del pop-up
+                    title: 'my-title', // Clase para el título
+                    confirmButton: 'my-confirm-button', // Clase para el botón de confirmación
+                    image: 'my-image' // Clase para la imagen
+                }
             });
             observer.disconnect(); // Para que no se vuelva a ejecutar cada vez que haga scroll
           }
