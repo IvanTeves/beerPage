@@ -4,9 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .imgNosotros{
   width: 30vw;
+  transform: translateX(100%); /* Centra el segundo rectángulo */
 }
+.imgNosotros.show{
+  width: 30vw;
+  transform: translateX(0%);
+  transition: transform 2s 0s ease-in-out;
+
+}
+.NuestraHistoriaDiv.show{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 2s 1.5s ease-in-out;
+  opacity: 1;
+}
+
 .NuestraHistoria{
   display: flex;
   width: 100%;
@@ -21,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
 .my-title{
@@ -530,7 +548,6 @@ body {
 .rightContainer.show {
   opacity: 1;
   transform: translateX(0); /* Se mueve a su posición original */
-
 }
 
 .titleParraLeft {
@@ -815,8 +832,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
   .imgNosotros {
     width: 40vh;
+    transform: translateX(70%);
+  }
+
+  .imgNosotros.show{
+    width: 40vw;
+    transform: translateX(0%);  
+    transition: transform 2s 0s ease-in-out;
   }
   .imgContainerPuesto{
     height: 30.35vh;
@@ -944,6 +969,7 @@ body {
   opacity: 1;
   transform: translateX(0%); 
 }
+
   .leftContainer.show, .leftContainer1.show{
     opacity: 1;
     transform: translateX(1%); 

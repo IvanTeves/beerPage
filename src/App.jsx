@@ -28,7 +28,6 @@ function App() {
             const circles = entry.target.querySelectorAll(".circle, .circlePintado");
             circles.forEach((circle, index) => {
               setTimeout(() => {
-                console.log(`Mostrando círculo ${index}`); // Debug
                 circle.classList.add("show");
               }, index * 300); // Efecto progresivo
             });
@@ -47,7 +46,7 @@ function App() {
       { threshold: 0.25 }
     );
   
-    const containers = document.querySelectorAll(".rightContainer1, .leftContainer1 , .leftContainer , .rightContainer");
+    const containers = document.querySelectorAll(".rightContainer1, .leftContainer1 , .leftContainer , .rightContainer , .imgNosotros,.NuestraHistoriaDiv");
   
     containers.forEach((el) => observer.observe(el));
   
