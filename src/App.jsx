@@ -74,7 +74,7 @@ function App() {
                   de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
-            circulosPintados={3}
+            circulosPintados={2}
             direccion="leftContainer1"
           />
           <Card
@@ -85,7 +85,7 @@ function App() {
                     de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
-            circulosPintados={6}
+            circulosPintados={4}
             direccion="rightContainer1"
           />
 
@@ -97,7 +97,7 @@ function App() {
                     de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
-            circulosPintados={6}
+            circulosPintados={5}
             direccion="leftContainer1"
           />
 
@@ -108,7 +108,7 @@ function App() {
             parra_1="Delicada cerveza de intenso, profundo y cristalino color dorado, de leve amargor y con inmenso poder para quitar la sed.  "
             parra_2="Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo. Ideal para acompañar unas buenas papas fritas."
             alcohol="5%"
-            circulosPintados={3}
+            circulosPintados={2}
             direccion="rightContainer1"
           />
 
@@ -131,7 +131,7 @@ function App() {
             parra_1="Impactante cerveza de color dorado, de intenso y sabroso amargor que dejan detrás del mismo delicados sabores cítricos, frutales y resinosos."
             parra_2=" La gran adición de lúpulos genera un aroma inconfundible del estilo y una espuma realmente consistente. Ideal para acompañar comidas picantes."
             alcohol="5%"
-            circulosPintados={3}
+            circulosPintados={6}
             direccion="rightContainer1"
           />
 
@@ -141,7 +141,7 @@ function App() {
             imgCerveza="cervezaSweetBe.png"
             parra_1=" Intrépida cerveza de color rubí con gran sabor a dulces frutos rojos. Ideal para degustar con algun postre frutal. "
             alcohol="5%"
-            circulosPintados={3}
+            circulosPintados={2}
             direccion="leftContainer1"
           />
           
@@ -162,7 +162,7 @@ function App() {
             parra_1=" Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca, otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. "
             parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
             alcohol="5%"
-            circulosPintados={3}
+            circulosPintados={1}
             direccion="leftContainer1"
           />
 

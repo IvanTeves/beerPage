@@ -25,8 +25,10 @@ export const NuestraHistoria = ({titulo,parra_1,parra_2,parra_3,parra_4,parra_5,
     return ( 
 
           <div className="NuestraHistoria" style={{
-            height: isMobile ? (expanded ? "160vh" : "65vh") :"80vh",
-            transition: "height 0.3s ease"
+            height: isMobile ? (expanded ? "160vh" : "auto") :"80vh",
+            transition: "height 0.3s ease",
+            paddingBottom:"2vh",
+            zIndex:"3"
 }}>
                 <img src="/SDNuestraHistoria.png" className="imgNosotros" alt="" />
                 <div className="NuestraHistoriaDiv" >
