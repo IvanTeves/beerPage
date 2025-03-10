@@ -103,7 +103,7 @@ function App() {
 
           <Card
             titulo="AMERICAN PALE ALE"
-            fondo="/SantadiablaAPAfinal.jpg"
+            fondo="/SantadiablaAPAfinal.webp"
             imgCerveza="cervezaHell.webp"
             parra_1="Cerveza color cobrizo con notas caramelizadas,
                     de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
