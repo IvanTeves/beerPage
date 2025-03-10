@@ -179,7 +179,7 @@ function App() {
           />
           <Card
             titulo="DARK HONEY"
-            fondo="/DarkHoney.webp"
+            fondo="/DarkHoneyFondo.webp"
             imgCerveza="darkHoney.webp"
             parra_1=" Cerveza negra de gran sabor y cuerpo, en la cual se emparejan de forma maravillosa el delicoso gusto a chocolate con la suavidad y dulzura de la miel pura de abejas. Ideal para acompañar postres como ser un tiramisú."
             alcohol="6%"
