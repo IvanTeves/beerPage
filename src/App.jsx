@@ -78,6 +78,18 @@ function App() {
             direccion="leftContainer1"
           />
           <Card
+            titulo="RED IPA"
+            fondo="/redipa.jpeg"
+            imgCerveza="redIpa.png"
+            parra_1="Cerveza recargada de lúpulos americanos, con un intenso color rojizo brindado por las maltas tostadas. 
+                          Perfil aromático cítrico y resinoso. "
+            parra_2="De cuerpo medio. Moderamente amarga, por el balance de la dulzura de las maltas, y con dejo de frutas tropicales aportado por los lúpulos."
+            alcohol="6%"
+            circulosPintados={3}
+            direccion="rightContainer1"
+            backgroundPosition="center 0px"
+          />
+          <Card
             titulo="WEST COAST IPA"
             fondo="/California.jpeg"
             imgCerveza="cervezaCalle2.png"
@@ -86,7 +98,7 @@ function App() {
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
             circulosPintados={4}
-            direccion="rightContainer1"
+            direccion="leftContainer1"
           />
 
           <Card
@@ -98,7 +110,7 @@ function App() {
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
             circulosPintados={5}
-            direccion="leftContainer1"
+            direccion="rightContainer1"
           />
 
           <Card
@@ -109,7 +121,7 @@ function App() {
             parra_2="Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo. Ideal para acompañar unas buenas papas fritas."
             alcohol="5%"
             circulosPintados={2}
-            direccion="rightContainer1"
+            direccion="leftContainer1"
           />
 
 
@@ -119,9 +131,9 @@ function App() {
             imgCerveza="cervezaPorter.png"
             parra_1="Robusta cerveza negra de gran carácter, con notas que recuerdan al café y al chocolate."
             parra_2=" Un amargor moderado equilibra su maltoso y sedoso cuerpo que trae consigo una inmejorable espuma. Ideal para acompañar un buen corte de carne vacuna o de cerdo."
-            alcohol="5%"
+            alcohol="6%"
             circulosPintados={3}
-            direccion="leftContainer1"
+            direccion="rightContainer1"
           />
 
           <Card
@@ -130,9 +142,9 @@ function App() {
             imgCerveza="cervezaAmericanIpa2.png"
             parra_1="Impactante cerveza de color dorado, de intenso y sabroso amargor que dejan detrás del mismo delicados sabores cítricos, frutales y resinosos."
             parra_2=" La gran adición de lúpulos genera un aroma inconfundible del estilo y una espuma realmente consistente. Ideal para acompañar comidas picantes."
-            alcohol="5%"
+            alcohol="6%"
             circulosPintados={6}
-            direccion="rightContainer1"
+            direccion="leftContainer1"
           />
 
           <Card
@@ -142,7 +154,7 @@ function App() {
             parra_1=" Intrépida cerveza de color rubí con gran sabor a dulces frutos rojos. Ideal para degustar con algun postre frutal. "
             alcohol="5%"
             circulosPintados={2}
-            direccion="leftContainer1"
+            direccion="rightContainer1"
           />
           
           <Card
@@ -153,7 +165,7 @@ function App() {
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
             circulosPintados={3}
-            direccion="rightContainer1"
+            direccion="leftContainer1"
           />
           <Card
             titulo="HONEY"
@@ -163,6 +175,15 @@ function App() {
             parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
             alcohol="5%"
             circulosPintados={1}
+            direccion="rightContainer1"
+          />
+          <Card
+            titulo="DARK HONEY"
+            fondo="/DarkHoney.jpg"
+            imgCerveza="darkHoney.png"
+            parra_1=" Cerveza negra de gran sabor y cuerpo, en la cual se emparejan de forma maravillosa el delicoso gusto a chocolate con la suavidad y dulzura de la miel pura de abejas. Ideal para acompañar postres como ser un tiramisú."
+            alcohol="6%"
+            circulosPintados={3}
             direccion="leftContainer1"
           />
 

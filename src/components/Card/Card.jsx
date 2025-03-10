@@ -2,10 +2,14 @@ import { FiPlusCircle } from "react-icons/fi";
 import { FiMinusCircle } from "react-icons/fi";
 import { useState,useEffect } from "react";
 
-export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPintados,direccion,imgX,imgY}) => {
+export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPintados,direccion,backgroundPosition,imgX,imgY}) => {
     const [expanded, setExpanded] = useState(false); // Estado para expandir/plegar
     const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
     
+    const estilo = {
+      backgroundPosition: `${backgroundPosition}`
+    }
+
     
     useEffect(() => {
       const handleResize = () => {
@@ -27,7 +31,7 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
     ));
     return (
         <div className={direccion}>   
-        <div className="producto" style={{ backgroundImage: `url(${fondo})` }}>
+        <div className="producto" style={{ backgroundImage: `url(${fondo})`,...estilo }}>
           <div className="texto-vertical"> SANTA DIABLA </div>
           <div className= "medio" style={{
                                           height: isMobile ? (expanded ? "70vh" : "35vh") : "90vh",
