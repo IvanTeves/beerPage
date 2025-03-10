@@ -85,7 +85,7 @@ function App() {
                           Perfil aromático cítrico y resinoso. "
             parra_2="De cuerpo medio. Moderamente amarga, por el balance de la dulzura de las maltas, y con dejo de frutas tropicales aportado por los lúpulos."
             alcohol="6%"
-            circulosPintados={3}
+            circulosPintados={6}
             direccion="rightContainer1"
             backgroundPosition="center 0px"
           />
@@ -224,10 +224,10 @@ function App() {
           <img className="footerDivImg" src="logoHeader.webp" alt="" />
           <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
           <div className="footerDivIcons">
-            <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" className="iconosFooter">
+            <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" className="iconosFooter">
                 <img src="/wspFooter.webp" alt="" />
             </a>
-            <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" className="iconosFooter">
+            <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" target="_blank" className="iconosFooter">
                 <img src="/instaFooter.webp" alt="" />
             </a>
           </div>
@@ -239,32 +239,3 @@ function App() {
 }
 
 export default App;
-
-/*
-
-<div className="productContainer">
-<div className="rightContainer" style={{height:'100%'}}>
-     <img  className="imgContainer zoomable"  src={'logodiabla1.png'} alt="producto" />
-     <div>
-       <p className="titleparraRight" style={{textAlign:'center'}}>Cervecería Santa Diabla</p>
-         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-           Cervecería Santa Diabla nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. 
-         </p>
-         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-           Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores.
-         </p>
-         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-           Los productos son elaborados en su planta productiva, ubicada en la ciudad de Rosario, donde cada paso es realizado y controlado de forma personal. 
-         </p>
-         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-         La cerveza es realmente artesanal, cada estilo parte de una única e inigualable receta. Todas nuestras materias primas son cuidadosamente seleccionadas y manipuladas. 
-         </p>
-         <p className="parraRight" style={{marginBottom:'0.5vh'}}>
-         Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. 
-         </p>
-         <p> Salud!</p>
-       
-     </div>
- </div>
-</div>
-*/
