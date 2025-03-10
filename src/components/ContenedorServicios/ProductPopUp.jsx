@@ -33,7 +33,7 @@ export const ProductPopUp = () => {
             Swal.fire({
                 title: 'Nuestros Servicios',
                 text: 'Aquí te mostramos nuestros mejores servicios.',
-                imageUrl: '/serviciosFondo.jpeg',
+                imageUrl: '/serviciosFondo.webp',
                 imageAlt: 'Imagen de servicios',
                 confirmButtonText: '¡Entendido!',
                 customClass: {
@@ -62,7 +62,7 @@ export const ProductPopUp = () => {
           
             <Servicios            
                         titulo="Barriles para locales gastronomicos"
-                        img="barrilAzul2.png"
+                        img="barrilAzul2.webp"
                         parra_1="El alquiler de barriles de cerveza es la opción perfecta para bares, restaurantes y organizadores de eventos que buscan ofrecer una experiencia única y de calidad sin necesidad de una gran inversión inicial."
                         parra_2 = " Con nuestro servicio, puedes acceder a una amplia variedad de cervezas artesanales y comerciales, adaptadas a las preferencias de tus clientes y al tipo de evento que estés organizando."
                         direccion="leftContainer"
@@ -70,7 +70,7 @@ export const ProductPopUp = () => {
             />
             <Servicios
                     titulo="Cerveza tirada con barra profesional para eventos"
-                    img="Puesto.jpeg"
+                    img="Puesto.webp"
                     parra_1="En Santa Diabla, nos especializamos en llevar la mejor cerveza artesanal directamente a tu evento, brindando una experiencia única para todos tus invitados. "
                     parra_2="Ya sea una fiesta privada, una boda, un festival o un evento corporativo, nuestra presencia garantiza que el sabor de nuestras cervezas premium transforme cualquier ocasión en un momento memorable."
                     direccion="rightContainer"
@@ -78,7 +78,7 @@ export const ProductPopUp = () => {
             />
             <Servicios
                     titulo="Alquiler choperas"
-                    img="chopera.png"
+                    img="chopera.webp"
                     parra_1="Si estás organizando una reunión, fiesta o evento especial, una chopera puede ser el toque perfecto para que todos disfruten de una cerveza bien tirada y siempre fría. "
                     direccion="leftContainer"
                     claseImg="imgContainerChoper zoomable"

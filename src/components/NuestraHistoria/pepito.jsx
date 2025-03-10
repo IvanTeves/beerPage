@@ -28,7 +28,7 @@ export const NuestraHistoria = ({titulo,parra_1,parra_2,parra_3,parra_4,parra_5,
             height: isMobile ? (expanded ? "160vh" : "65vh") :"80vh",
             transition: "height 0.3s ease"
 }}>
-                <img src="/SDNuestraHistoria.png" className="imgNosotros" alt="" />
+                <img src="/SDNuestraHistoria.webp" className="imgNosotros" alt="" />
                 <div className="NuestraHistoriaDiv" >
                   <p className="titleParraLeft" style={{marginTop:'1vw'}}>Cervecería Santa Diabla</p>
                   <p className="parraLeft" style={{

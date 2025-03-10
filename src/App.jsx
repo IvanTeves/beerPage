@@ -68,8 +68,8 @@ function App() {
 
           <Card
             titulo="FIEBRE DE VERANO"
-            fondo="/etiqueta.jpg"
-            imgCerveza="cervezaFondosinBlanco.png"
+            fondo="/etiqueta.webp"
+            imgCerveza="cervezaFondosinBlanco.webp"
             parra_1="Cerveza color cobrizo con notas caramelizadas,
                   de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
@@ -79,8 +79,8 @@ function App() {
           />
           <Card
             titulo="RED IPA"
-            fondo="/redipa.jpeg"
-            imgCerveza="redIpa.png"
+            fondo="/redipa.webp"
+            imgCerveza="redIpa.webp"
             parra_1="Cerveza recargada de lúpulos americanos, con un intenso color rojizo brindado por las maltas tostadas. 
                           Perfil aromático cítrico y resinoso. "
             parra_2="De cuerpo medio. Moderamente amarga, por el balance de la dulzura de las maltas, y con dejo de frutas tropicales aportado por los lúpulos."
@@ -91,8 +91,8 @@ function App() {
           />
           <Card
             titulo="WEST COAST IPA"
-            fondo="/California.jpeg"
-            imgCerveza="cervezaCalle2.png"
+            fondo="/California.webp"
+            imgCerveza="cervezaCalle2.webp"
             parra_1="Cerveza color cobrizo con notas caramelizadas,
                     de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
@@ -104,7 +104,7 @@ function App() {
           <Card
             titulo="AMERICAN PALE ALE"
             fondo="/SantadiablaAPAfinal.jpg"
-            imgCerveza="cervezaHell.png"
+            imgCerveza="cervezaHell.webp"
             parra_1="Cerveza color cobrizo con notas caramelizadas,
                     de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma."
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
@@ -115,8 +115,8 @@ function App() {
 
           <Card
             titulo="GOLDEN ALE"
-            fondo="/Golden.jpg"
-            imgCerveza="cervezaGolden.png"
+            fondo="/Golden.webp"
+            imgCerveza="cervezaGolden.webp"
             parra_1="Delicada cerveza de intenso, profundo y cristalino color dorado, de leve amargor y con inmenso poder para quitar la sed.  "
             parra_2="Una sutil espuma blanca y compacta acompaña desde el primer trago hasta el ultimo sorbo. Ideal para acompañar unas buenas papas fritas."
             alcohol="5%"
@@ -127,8 +127,8 @@ function App() {
 
           <Card
             titulo="PORTER"
-            fondo="/Porter.jpg"
-            imgCerveza="cervezaPorter.png"
+            fondo="/Porter.webp"
+            imgCerveza="cervezaPorter.webp"
             parra_1="Robusta cerveza negra de gran carácter, con notas que recuerdan al café y al chocolate."
             parra_2=" Un amargor moderado equilibra su maltoso y sedoso cuerpo que trae consigo una inmejorable espuma. Ideal para acompañar un buen corte de carne vacuna o de cerdo."
             alcohol="6%"
@@ -138,8 +138,8 @@ function App() {
 
           <Card
             titulo="AMERICAN IPA"
-            fondo="/IPA.jpg"
-            imgCerveza="cervezaAmericanIpa2.png"
+            fondo="/IPA.webp"
+            imgCerveza="cervezaAmericanIpa2.webp"
             parra_1="Impactante cerveza de color dorado, de intenso y sabroso amargor que dejan detrás del mismo delicados sabores cítricos, frutales y resinosos."
             parra_2=" La gran adición de lúpulos genera un aroma inconfundible del estilo y una espuma realmente consistente. Ideal para acompañar comidas picantes."
             alcohol="6%"
@@ -149,8 +149,8 @@ function App() {
 
           <Card
             titulo="SWEETBERRIES"
-            fondo="/SB.jpg"
-            imgCerveza="cervezaSweetBe.png"
+            fondo="/SB.webp"
+            imgCerveza="cervezaSweetBe.webp"
             parra_1=" Intrépida cerveza de color rubí con gran sabor a dulces frutos rojos. Ideal para degustar con algun postre frutal. "
             alcohol="5%"
             circulosPintados={2}
@@ -159,8 +159,8 @@ function App() {
           
           <Card
             titulo="AMERICAN AMBER ALE"
-            fondo="/AAA.jpg"
-            imgCerveza="cervezasAAA.png"
+            fondo="/AAA.webp"
+            imgCerveza="cervezasAAA.webp"
             parra_1=" Cerveza color cobrizo con notas caramelizadas, de amargor medio con perfil frutado y cítrico que se destacan también en su atrapante aroma. "
             parra_2="Una perfecta elección para saciar la sed con gran sabor y acompañar comidas rebozadas"
             alcohol="5%"
@@ -169,8 +169,8 @@ function App() {
           />
           <Card
             titulo="HONEY"
-            fondo="/Honey.jpg"
-            imgCerveza="cervezaHoney.png"
+            fondo="/Honey.webp"
+            imgCerveza="cervezaHoney.webp"
             parra_1=" Delicada cerveza de profundo color dorado, de leve dulzura y extrema suavidad en boca, otorgada por la adicion de miel pura de abejas cuidadosamente seleccionada. "
             parra_2="Ideal para acompañar comidas agridulces o unas costillas de cerdo con salsa barbacoa."
             alcohol="5%"
@@ -179,8 +179,8 @@ function App() {
           />
           <Card
             titulo="DARK HONEY"
-            fondo="/DarkHoney.jpg"
-            imgCerveza="darkHoney.png"
+            fondo="/DarkHoney.webp"
+            imgCerveza="darkHoney.webp"
             parra_1=" Cerveza negra de gran sabor y cuerpo, en la cual se emparejan de forma maravillosa el delicoso gusto a chocolate con la suavidad y dulzura de la miel pura de abejas. Ideal para acompañar postres como ser un tiramisú."
             alcohol="6%"
             circulosPintados={3}
@@ -196,12 +196,12 @@ function App() {
 
         <h3 id="Nuestros"className="productTitle">Confían en nosotros</h3>
         <div className="divClientes">
-          <img className = "imgCliente" src="./lasbirrasdejuan.png" alt="" />
-          <img className = "imgCliente" src="/N40.jpeg" alt="" />
-          <img className = "imgCliente" src="/GROWLER.jpeg" alt="" />
-          <img className = "imgCliente" src="/borussia.jpg" alt="" />
-          <img className = "imgCliente" src="/bar46.jpg" alt="" />
-          <img className = "imgCliente" src="/refugio.png" alt="" />
+          <img className = "imgCliente" src="./lasbirrasdejuan.webp" alt="" />
+          <img className = "imgCliente" src="/N40.webp" alt="" />
+          <img className = "imgCliente" src="/GROWLER.webp" alt="" />
+          <img className = "imgCliente" src="/borussia.webp" alt="" />
+          <img className = "imgCliente" src="/bar46.webp" alt="" />
+          <img className = "imgCliente" src="/refugio.webp" alt="" />
         </div>
 
         <h3 id="Sobre" className="productTitle">Nuestra Historia</h3>
@@ -216,19 +216,19 @@ function App() {
 
 
         <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" rel="noopener noreferrer" className="floating-icon">
-          <img src="/wsp.png" alt="Icono fijo" className="floating-icon-img" />
+          <img src="/wsp.webp" alt="Icono fijo" className="floating-icon-img" />
         </a>
       </main>
       <footer className="footer">
         <div  className="footerDiv">
-          <img className="footerDivImg" src="logoHeader.png" alt="" />
+          <img className="footerDivImg" src="logoHeader.webp" alt="" />
           <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
           <div className="footerDivIcons">
             <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" className="iconosFooter">
-                <img src="/wspFooter.png" alt="" />
+                <img src="/wspFooter.webp" alt="" />
             </a>
             <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" className="iconosFooter">
-                <img src="/instaFooter.png" alt="" />
+                <img src="/instaFooter.webp" alt="" />
             </a>
           </div>
         </div>

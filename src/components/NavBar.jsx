@@ -6,8 +6,8 @@ export const NavBar = () => {
 
   return (
     <div className="divNavbar">
-      <img className="imgLogo" src="logoHeader.png" alt="Logo" />
-      <img className="imgLogo2" src="LogoMobile.png" alt="Logo" />
+      <img className="imgLogo" src="logoHeader.webp" alt="Logo" />
+      <img className="imgLogo2" src="LogoMobile.webp" alt="Logo" />
 
       {/* Menú para pantallas grandes */}
       <nav className="NavBar">
@@ -20,7 +20,7 @@ export const NavBar = () => {
       {/* Icono del menú para pantallas pequeñas */}
       <img 
         className="ImgMenu" 
-        src="/menu.png" 
+        src="/menu.webp" 
         alt="Menú" 
         onClick={() => setMenuOpen(!menuOpen)}
       />

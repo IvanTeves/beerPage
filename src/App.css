@@ -66,7 +66,7 @@
 .bannerImg{
   opacity: 0;
   transition: opacity 1s 0s ease-in-out;
-  background-image: url("/BannerNuevo2.png");
+  background-image: url("/BannerNuevo2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* o 'cover' según lo que quieras */
@@ -856,7 +856,7 @@ body {
   
   
   .bannerImg{
-    background-image: url("/bannerMobile2.png");
+    background-image: url("/bannerMobile2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* o 'cover' según lo que quieras */

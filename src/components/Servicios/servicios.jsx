@@ -26,7 +26,7 @@ export const Servicios = ({titulo,img,parra_1,parra_2,parra_3,direccion,claseImg
 
     return (
 
-          <div className={direccion} style={{backgroundImage:'url(/logoDiablaFondo.png)',  backgroundSize: "cover",
+          <div className={direccion} style={{backgroundImage:'url(/logoDiablaFondo.webp)',  backgroundSize: "cover",
                                                     backgroundRepeat: "no-repeat",
                                                     backgroundPosition: "center",
                                                     backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
@@ -66,7 +66,7 @@ export const Servicios = ({titulo,img,parra_1,parra_2,parra_3,direccion,claseImg
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
-<img src="/Puesto.jpeg" style={{margin:'3vw'}} className="imgContainerPuesto zoomable" alt="" />
+<img src="/Puesto.webp" style={{margin:'3vw'}} className="imgContainerPuesto zoomable" alt="" />
 <div className="divServicios" >
 <p className="titleParraLeft">Presencias en eventos</p>
 <p className="parraLeft" style={{

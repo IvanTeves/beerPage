@@ -26,7 +26,7 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
 
     const circulos = Array.from({ length: 7 }, (_, i) => (
         <div key={i} className={i < circulosPintados ? "circlePintado" : "circle"}>
-            <img className={i < circulosPintados ? "circlePintado" : "circle"}src={i < circulosPintados ? "./lupulo.png" : "./lupulovacio.png"} alt="lúpulo" />
+            <img className={i < circulosPintados ? "circlePintado" : "circle"}src={i < circulosPintados ? "./lupulo.webp" : "./lupulovacio.webp"} alt="lúpulo" />
         </div>
     ));
     return (

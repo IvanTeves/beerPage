@@ -30,7 +30,7 @@ export const NuestraHistoria = ({titulo,parra_1,parra_2,parra_3,parra_4,parra_5,
             paddingBottom:"2vh",
             zIndex:"3"
 }}>
-                <img src="/SDNuestraHistoria.png" className="imgNosotros" alt="" />
+                <img src="/SDNuestraHistoria.webp" className="imgNosotros" alt="" />
                 <div className="NuestraHistoriaDiv" >
                   <p className="titleParraLeft" style={{marginTop:'1vw'}}>Cervecería Santa Diabla</p>
                   <p className="parraLeft" style={{
