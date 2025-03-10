@@ -80,7 +80,7 @@ function App() {
           <Card
             titulo="RED IPA"
             fondo="/redipa.webp"
-            imgCerveza="redIpa.webp"
+            imgCerveza="cervezaRedIpa.webp"
             parra_1="Cerveza recargada de lúpulos americanos, con un intenso color rojizo brindado por las maltas tostadas. 
                           Perfil aromático cítrico y resinoso. "
             parra_2="De cuerpo medio. Moderamente amarga, por el balance de la dulzura de las maltas, y con dejo de frutas tropicales aportado por los lúpulos."
