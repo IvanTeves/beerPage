@@ -63,7 +63,9 @@ function App() {
       </header>
       <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
         <ImgBanner />
-        <h3 id="Productos"className="productTitle">Nuestros productos</h3>
+        <h1 className="productTitle"  style={{fontStyle:'italic'}}>Cerveza Santa Diabla</h1>
+
+        
         <div className="productContainer">
 
           <Card
@@ -189,22 +191,22 @@ function App() {
 
 
         </div>
-        <h3 id="Servicios"className="productTitle">Servicios</h3>
+        <h3 id="Servicios"className="productTitle" style={{fontStyle:'italic'}}>Servicios</h3>
           
         <ProductPopUp/>
         
 
-        <h3 id="Nuestros"className="productTitle">Confían en nosotros</h3>
+        <h3 id="Nuestros"className="productTitle" style={{fontStyle:'italic'}}>Confían en nosotros</h3>
         <div className="divClientes">
-          <img className = "imgCliente" src="./lasbirrasdejuan.webp" alt="" />
-          <img className = "imgCliente" src="/N40.webp" alt="" />
-          <img className = "imgCliente" src="/GROWLER.webp" alt="" />
-          <img className = "imgCliente" src="/borussia.webp" alt="" />
-          <img className = "imgCliente" src="/bar46.webp" alt="" />
-          <img className = "imgCliente" src="/refugio.webp" alt="" />
+          <img className = "imgCliente" src="./lasbirrasdejuan.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img className = "imgCliente" src="/N40.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img className = "imgCliente" src="/GROWLER.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img className = "imgCliente" src="/borussia.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img className = "imgCliente" src="/bar46.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img className = "imgCliente" src="/refugio.webp" alt="Clientes Cerveza Santa Diabla" />
         </div>
 
-        <h3 id="Sobre" className="productTitle">Nuestra Historia</h3>
+        <h3 id="Sobre" className="productTitle" style={{fontStyle:'italic'}}>Nuestra Historia</h3>
         <NuestraHistoria
           parra_1="Nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. "
           parra_2="Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores."
@@ -221,17 +223,20 @@ function App() {
       </main>
       <footer className="footer">
         <div  className="footerDiv">
-          <img className="footerDivImg" src="logoHeader.webp" alt="" />
-          <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
-          <div className="footerDivIcons">
-            <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" className="iconosFooter">
-                <img src="/wspFooter.webp" alt="" />
-            </a>
-            <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" target="_blank" className="iconosFooter">
-                <img src="/instaFooter.webp" alt="" />
-            </a>
+          <img className="footerDivImg" src="logoHeader.webp" alt="Cerveza Santa Diabla" />
+            <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
+            <div className="footerDivIcons">
+              <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" className="iconosFooter">
+                  <img src="/wspFooter.webp" alt="Wsp Santa Diabla" />
+              </a>
+              <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" target="_blank" className="iconosFooter">
+                  <img src="/instaFooter.webp" alt="Instagram Santa Diabla" />
+              </a>
+              <a href="https://maps.app.goo.gl/xECfcNi8XTUE8dxf6" target="_blank" className="iconosFooter">
+                  <img src="/ubicacion.webp" alt="Instagram Santa Diabla" />
+              </a>
+            </div>
           </div>
-        </div>
       </footer>
 
     </>

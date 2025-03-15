@@ -58,7 +58,7 @@ export const NuestraHistoria = ({titulo,parra_1,parra_2,parra_3,parra_4,parra_5,
                                          }}>
                      {parra_5}
                  </p>
-                 <p className="parraLeft" style={{
+                 <p className="parraLeft" style={{marginBottom:  isMobile ? (expanded ? '5vh' : 'none'):'0px' ,
                                           display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
                                          }}>
                      {parra_6}

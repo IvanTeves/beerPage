@@ -34,7 +34,7 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
         <div className="producto" style={{ backgroundImage: `url(${fondo})`,...estilo }}>
           <div className="texto-vertical"> SANTA DIABLA </div>
           <div className= "medio" style={{
-                                          height: isMobile ? (expanded ? "70vh" : "35vh") : "90vh",
+                                          height: isMobile ? (expanded ? "auto" : "35vh") : "90vh",
                                           transition: "height 0.3s ease"
             }}>
               <div className="divLinea">
@@ -48,11 +48,9 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
               </div>
             <p className="leftAbv" >ABV: {alcohol}</p>
             <p className="cardDesc" style={{
-                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
-
-            }}>{parra_1} 
+                                          display: isMobile ? (expanded ? 'block' : 'none') : 'block' }}>{parra_1} 
             </p>
-            <p className="cardDesc" style={{
+            <p className="cardDesc" style={{marginBottom:  isMobile ? (expanded ? '5vh' : 'none'):'0px' ,
                                           display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,             
 
             }}>{parra_2}</p>
@@ -63,7 +61,7 @@ export const Card = ({titulo,fondo,imgCerveza,parra_1,parra_2,alcohol,circulosPi
             </div>           
 
           </div>
-          <img className="img" src={imgCerveza} alt=""/>
+          <img className="img" src={imgCerveza} alt="Cerveza Santa Diabla"/>
         </div>
       </div>
     )

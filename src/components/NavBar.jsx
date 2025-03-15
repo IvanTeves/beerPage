@@ -6,8 +6,8 @@ export const NavBar = () => {
 
   return (
     <div className="divNavbar">
-      <img className="imgLogo" src="logoHeader.webp" alt="Logo" />
-      <img className="imgLogo2" src="LogoMobile.webp" alt="Logo" />
+      <img className="imgLogo" src="logoHeader.webp" alt="Logo Cerveza Santa Diabla" />
+      <img className="imgLogo2" src="LogoMobile.webp" alt="Logo Cerveza Santa Diabla" />
 
       {/* Menú para pantallas grandes */}
       <nav className="NavBar">

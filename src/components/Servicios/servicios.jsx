@@ -32,7 +32,7 @@ export const Servicios = ({titulo,img,parra_1,parra_2,parra_3,direccion,claseImg
                                                     backgroundBlendMode: "multiply",backgroundColor: "rgba(0, 0, 0, 0.586)"}}>
                 <img src={img} className={claseImg} alt="" />
                 <div className="divServicios" style={{
-                                          height: isMobile ? (expanded ? "70vh" : "auto") : "100%",
+                                          height: isMobile ? (expanded ? "auto" : "auto") : "100%",
                                           transition: "height 0.3s ease"
                 }}>
                   <p className="titleParraLeft">{titulo}</p>
@@ -46,7 +46,7 @@ export const Servicios = ({titulo,img,parra_1,parra_2,parra_3,direccion,claseImg
                                         }}>
                     {parra_2}
                  </p>
-                 <p className="parraLeft" style={{
+                 <p className="parraLeft" style={{marginBottom:  isMobile ? (expanded ? '5vh' : 'none'):'0px' ,
                                           display: isMobile ? (expanded ? 'block' : 'none') : 'block' ,
                                          }}>
                      {parra_3}
