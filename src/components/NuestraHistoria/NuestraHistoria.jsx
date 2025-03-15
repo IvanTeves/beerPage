@@ -25,7 +25,7 @@ export const NuestraHistoria = ({titulo,parra_1,parra_2,parra_3,parra_4,parra_5,
     return ( 
 
           <div className="NuestraHistoria" style={{
-            height: isMobile ? (expanded ? "160vh" : "auto") :"80vh",
+            height: isMobile ? (expanded ? "auto" : "auto") :"80vh",
             transition: "height 0.3s ease",
             paddingBottom:"2vh",
             zIndex:"3"
