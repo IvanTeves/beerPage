@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./components/merchandising/styleMerch.css"
 import { NavBar } from "./components/NavBar";
 import { Card } from "./components/Card/Card";
 import { BsDisplay } from "react-icons/bs";
@@ -11,6 +12,8 @@ import { MenuHamburguesa } from "./components/menuHamburguesa";
 import { initMercadoPago } from '@mercadopago/sdk-react'
 import {ProductPopUp} from './components/ContenedorServicios/ProductPopUp.jsx';
 import { NuestraHistoria } from "./components/NuestraHistoria/NuestraHistoria.jsx";
+import {ImageCard } from "./components/merchandising/Merch.jsx";
+
 /*import { renderPaymentBrick } from "./components/Bricks/bricks";*/     
 /*import { Payment } from '@mercadopago/sdk-react';*/ 
 /*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/ 
@@ -205,7 +208,25 @@ function App() {
           <img className = "imgCliente" src="/bar46.webp" alt="Clientes Cerveza Santa Diabla" />
           <img className = "imgCliente" src="/refugio.webp" alt="Clientes Cerveza Santa Diabla" />
         </div>
+        <h3 id="Nuestros"className="productTitle" style={{fontStyle:'italic'}}>Merchandising</h3>
+        <div style={{display:'flex',flexWrap:'wrap',flexDirection: 'row', marginBottom:'10vw',marginTop:'10vw'}}className="productContainer">
+          <ImageCard
+            img_1="/W&B_FRONT.png"     
+            img_2 = "/W&B_BACK.png"
+            prodName="Remera Blanca logo Negro"
+          />
+          <ImageCard
+            img_1="/B&B_FRONT.png"     
+            img_2 = "/B&B_BACK.png"
+            prodName="Remera Negra logo Beige"
+          />
+          <ImageCard
+            img_1="/W&R_FRONT.png"     
+            img_2 = "/W&R_BACK.png"
+            prodName="Remera Blanca logo Rojo"
+          />
 
+        </div>
         <h3 id="Sobre" className="productTitle" style={{fontStyle:'italic'}}>Nuestra Historia</h3>
         <NuestraHistoria
           parra_1="Nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. "
