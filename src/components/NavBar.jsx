@@ -13,7 +13,7 @@ export const NavBar = () => {
       <nav className="NavBar">
         <a className="hover-underline oswald" href="#Productos">Productos</a>
         <a className="hover-underline oswald" href="#Servicios">Servicios</a>
-        <a className="hover-underline oswald" href="#Servicios">Merchandising</a>
+        <a className="hover-underline oswald" href="#Merchandising">Merchandising</a>
         <a className="hover-underline oswald" href="#Sobre">Sobre Nosotros</a>
         <a className="hover-underline oswald" href="#Nuestros">Nuestros Clientes</a>
       </nav>
