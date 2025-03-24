@@ -16,7 +16,9 @@ export const ImageCard = ({ img_1, img_2, prodName}) => {
           alt="Producto"
           className="card-image"
         />
+        <p className="prodName">{prodName}</p>
         <div className="card-circles">
+        
           {images.map((_, index) => (
             <button
               key={index}
@@ -25,7 +27,7 @@ export const ImageCard = ({ img_1, img_2, prodName}) => {
             />
           ))}
         </div>
-        <p className="prodName">{prodName}</p>
+
       </div>
     );
   };

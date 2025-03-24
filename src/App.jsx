@@ -208,22 +208,22 @@ function App() {
           <img className = "imgCliente" src="/bar46.webp" alt="Clientes Cerveza Santa Diabla" />
           <img className = "imgCliente" src="/refugio.webp" alt="Clientes Cerveza Santa Diabla" />
         </div>
-        <h3 id="Nuestros"className="productTitle" style={{fontStyle:'italic'}}>Merchandising</h3>
-        <div style={{display:'flex',flexWrap:'wrap',flexDirection: 'row', marginBottom:'10vw',marginTop:'10vw'}}className="productContainer">
+        <h3 id="Merchandising" className="productTitle" style={{fontStyle:'italic'}}>Merchandising</h3>
+        <div style={{display:'flex',flexWrap:'wrap',flexDirection: 'row', marginBottom:'10vw',marginTop:'10vw'}}className="productContainer" >
           <ImageCard
-            img_1="/W&B_FRONT.png"     
-            img_2 = "/W&B_BACK.png"
-            prodName="Remera Blanca logo Negro"
+            img_1="/W&B_FRONT.webp"     
+            img_2 = "/W&B_BACK.webp"
+            prodName="Remera Blanca Logo Negro"
           />
           <ImageCard
-            img_1="/B&B_FRONT.png"     
-            img_2 = "/B&B_BACK.png"
-            prodName="Remera Negra logo Beige"
+            img_1="/B&B_FRONT.webp"     
+            img_2 = "/B&B_BACK.webp"
+            prodName="Remera Negra Logo Beige"
           />
           <ImageCard
-            img_1="/W&R_FRONT.png"     
-            img_2 = "/W&R_BACK.png"
-            prodName="Remera Blanca logo Rojo"
+            img_1="/W&R_FRONT.webp"     
+            img_2 = "/W&R_BACK.webp"
+            prodName="Remera Blanca Logo Rojo"
           />
 
         </div>
