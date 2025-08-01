@@ -22,6 +22,13 @@ export const NavBar = () => {
         <a className="hover-underline oswald" href="#Productos">
           Productos
         </a>
+        <a
+          className="hover-underline oswald"
+          target="_blank"
+          href="https://cervezasantadiabla2.mitiendanube.com/"
+        >
+          Tienda
+        </a>
         <a className="hover-underline oswald" href="#Servicios">
           Servicios
         </a>
