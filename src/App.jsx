@@ -1,76 +1,85 @@
-import { useState } from "react";
-import "./App.css";
-import "./components/merchandising/styleMerch.css"
-import { NavBar } from "./components/NavBar";
-import { Card } from "./components/Card/Card";
-import { BsDisplay } from "react-icons/bs";
-import {ImgBanner} from "./carousel";
-import ScrollImage from "./components/ScrollImage";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { MenuHamburguesa } from "./components/menuHamburguesa";
+import { useState } from 'react'
+import './App.css'
+import './components/merchandising/styleMerch.css'
+import { NavBar } from './components/NavBar'
+import { Card } from './components/Card/Card'
+import { BsDisplay } from 'react-icons/bs'
+import { ImgBanner } from './carousel'
+import ScrollImage from './components/ScrollImage'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { MenuHamburguesa } from './components/menuHamburguesa'
 import { initMercadoPago } from '@mercadopago/sdk-react'
-import {ProductPopUp} from './components/ContenedorServicios/ProductPopUp.jsx';
-import { NuestraHistoria } from "./components/NuestraHistoria/NuestraHistoria.jsx";
-import {ImageCard } from "./components/merchandising/Merch.jsx";
+import { ProductPopUp } from './components/ContenedorServicios/ProductPopUp.jsx'
+import { NuestraHistoria } from './components/NuestraHistoria/NuestraHistoria.jsx'
+import { ImageCard } from './components/merchandising/Merch.jsx'
 
-/*import { renderPaymentBrick } from "./components/Bricks/bricks";*/     
-/*import { Payment } from '@mercadopago/sdk-react';*/ 
-/*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/ 
+/*import { renderPaymentBrick } from "./components/Bricks/bricks";*/
+/*import { Payment } from '@mercadopago/sdk-react';*/
+/*initMercadoPago('TEST-9c9836ce-88d9-41e9-8678-f02800855eac');*/
 /*const bricksBuilder = mp.bricks();*/
 function App() {
-  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-  
+            entry.target.classList.add('show')
+
             // Verifica si hay círculos dentro del contenedor
-            const circles = entry.target.querySelectorAll(".circle, .circlePintado");
+            const circles = entry.target.querySelectorAll(
+              '.circle, .circlePintado'
+            )
             circles.forEach((circle, index) => {
               setTimeout(() => {
-                circle.classList.add("show");
-              }, index * 300); // Efecto progresivo
-            });
-  
+                circle.classList.add('show')
+              }, index * 300) // Efecto progresivo
+            })
           } else {
-            entry.target.classList.remove("show");
-  
+            entry.target.classList.remove('show')
+
             // Oculta los círculos cuando el contenedor desaparece
-            const circles = entry.target.querySelectorAll(".circle, .circlePintado");
+            const circles = entry.target.querySelectorAll(
+              '.circle, .circlePintado'
+            )
             circles.forEach((circle) => {
-              circle.classList.remove("show");
-            });
+              circle.classList.remove('show')
+            })
           }
-        });
+        })
       },
       { threshold: 0.25 }
-    );
-  
-    const containers = document.querySelectorAll(".rightContainer1, .leftContainer1 , .leftContainer , .rightContainer , .imgNosotros,.NuestraHistoriaDiv");
-  
-    containers.forEach((el) => observer.observe(el));
-  
+    )
+
+    const containers = document.querySelectorAll(
+      '.rightContainer1, .leftContainer1 , .leftContainer , .rightContainer , .imgNosotros,.NuestraHistoriaDiv'
+    )
+
+    containers.forEach((el) => observer.observe(el))
+
     return () => {
-      containers.forEach((el) => observer.unobserve(el));
-    };
-  }, []);
-  
+      containers.forEach((el) => observer.unobserve(el))
+    }
+  }, [])
+
   return (
     <>
       <header className="header">
         <NavBar />
-
       </header>
-      <main style={{    display: 'flex' ,flexDirection: 'column', height:'auto'}}>
+      <main
+        style={{ display: 'flex', flexDirection: 'column', height: 'auto' }}
+      >
         <ImgBanner />
-        <h1 className="productTitle"  style={{fontStyle:'italic'}}>Cerveza Santa Diabla</h1>
+        <h1
+          className="productTitle"
+          id="Productos"
+          style={{ fontStyle: 'italic' }}
+        >
+          Cerveza Santa Diabla
+        </h1>
 
-        
         <div className="productContainer">
-
           <Card
             titulo="FIEBRE DE VERANO"
             fondo="/etiqueta.webp"
@@ -129,7 +138,6 @@ function App() {
             direccion="leftContainer1"
           />
 
-
           <Card
             titulo="PORTER"
             fondo="/Porter.webp"
@@ -161,7 +169,7 @@ function App() {
             circulosPintados={2}
             direccion="rightContainer1"
           />
-          
+
           <Card
             titulo="AMERICAN AMBER ALE"
             fondo="/AAA.webp"
@@ -191,77 +199,147 @@ function App() {
             circulosPintados={3}
             direccion="leftContainer1"
           />
-
-
         </div>
-        <h3 id="Servicios"className="productTitle" style={{fontStyle:'italic'}}>Servicios</h3>
-          
-        <ProductPopUp/>
-        
+        <h3
+          id="Servicios"
+          className="productTitle"
+          style={{ fontStyle: 'italic' }}
+        >
+          Servicios
+        </h3>
 
-        <h3 id="Nuestros"className="productTitle" style={{fontStyle:'italic'}}>Confían en nosotros</h3>
+        <ProductPopUp />
+
+        <h3
+          id="Nuestros"
+          className="productTitle"
+          style={{ fontStyle: 'italic' }}
+        >
+          Confían en nosotros
+        </h3>
         <div className="divClientes">
-          <img className = "imgCliente" src="./lasbirrasdejuan.webp" alt="Clientes Cerveza Santa Diabla" />
-          <img className = "imgCliente" src="/N40.webp" alt="Clientes Cerveza Santa Diabla" />
-          <img className = "imgCliente" src="/GROWLER.webp" alt="Clientes Cerveza Santa Diabla" />
-          <img className = "imgCliente" src="/borussia.webp" alt="Clientes Cerveza Santa Diabla" />
-          <img className = "imgCliente" src="/bar46.webp" alt="Clientes Cerveza Santa Diabla" />
-          <img className = "imgCliente" src="/refugio.webp" alt="Clientes Cerveza Santa Diabla" />
+          <img
+            className="imgCliente"
+            src="./lasbirrasdejuan.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
+          <img
+            className="imgCliente"
+            src="/N40.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
+          <img
+            className="imgCliente"
+            src="/GROWLER.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
+          <img
+            className="imgCliente"
+            src="/borussia.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
+          <img
+            className="imgCliente"
+            src="/bar46.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
+          <img
+            className="imgCliente"
+            src="/refugio.webp"
+            alt="Clientes Cerveza Santa Diabla"
+          />
         </div>
-        <h3 id="Merchandising" className="productTitle" style={{fontStyle:'italic'}}>Merchandising</h3>
-        <div style={{display:'flex',flexWrap:'wrap',flexDirection: 'row', marginBottom:'10vw',marginTop:'10vw'}}className="productContainer" >
+        <h3
+          id="Merchandising"
+          className="productTitle"
+          style={{ fontStyle: 'italic' }}
+        >
+          Merchandising
+        </h3>
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            flexDirection: 'row',
+            marginBottom: '10vw',
+            marginTop: '10vw',
+          }}
+          className="productContainer"
+        >
           <ImageCard
-            img_1="/W&B_FRONT.webp"     
-            img_2 = "/W&B_BACK.webp"
+            img_1="/W&B_FRONT.webp"
+            img_2="/W&B_BACK.webp"
             prodName="Remera Blanca Logo Negro"
           />
           <ImageCard
-            img_1="/B&B_FRONT.webp"     
-            img_2 = "/B&B_BACK.webp"
+            img_1="/B&B_FRONT.webp"
+            img_2="/B&B_BACK.webp"
             prodName="Remera Negra Logo Beige"
           />
           <ImageCard
-            img_1="/W&R_FRONT.webp"     
-            img_2 = "/W&R_BACK.webp"
+            img_1="/W&R_FRONT.webp"
+            img_2="/W&R_BACK.webp"
             prodName="Remera Blanca Logo Rojo"
           />
-
         </div>
-        <h3 id="Sobre" className="productTitle" style={{fontStyle:'italic'}}>Nuestra Historia</h3>
+        <h3 id="Sobre" className="productTitle" style={{ fontStyle: 'italic' }}>
+          Nuestra Historia
+        </h3>
         <NuestraHistoria
           parra_1="Nace de la unión de dos grandes amigos, casi hermanos, que comparten una gran pasión y admiración por la cerveza artesanal. "
           parra_2="Sus pilares fundamentales son el trabajo en equipo, el respeto, la dedicación y la atención hacia calidad de sus productos y el trato con sus clientes y consumidores."
           parra_3="Los productos son elaborados en su planta productiva, ubicada en la ciudad de Rosario, donde cada paso es realizado y controlado de forma personal. "
           parra_4="La cerveza es realmente artesanal, cada estilo parte de una única e inigualable receta. Todas nuestras materias primas son cuidadosamente seleccionadas y manipuladas. "
-          parra_5 = "Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. "
-          parra_6 = "¡Salud!"        
+          parra_5="Como cervecería nos enorgullece poder lograr cervezas únicas, totalmente libre de conservantes, que despiertan de forma agradable todos los sentidos al ser bebida. "
+          parra_6="¡Salud!"
         />
 
-
-        <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" rel="noopener noreferrer" className="floating-icon">
+        <a
+          href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="floating-icon"
+        >
           <img src="/wsp.webp" alt="Icono fijo" className="floating-icon-img" />
         </a>
       </main>
       <footer className="footer">
-        <div  className="footerDiv">
-          <img className="footerDivImg" src="logoHeader.webp" alt="Cerveza Santa Diabla" />
-            <p className="footerDir">Dirección: Mitre 4079, Rosario, Santa Fe, Argentina</p>
-            <div className="footerDivIcons">
-              <a href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22" target="_blank" className="iconosFooter">
-                  <img src="/wspFooter.webp" alt="Wsp Santa Diabla" />
-              </a>
-              <a href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ==" target="_blank" className="iconosFooter">
-                  <img src="/instaFooter.webp" alt="Instagram Santa Diabla" />
-              </a>
-              <a href="https://maps.app.goo.gl/xECfcNi8XTUE8dxf6" target="_blank" className="iconosFooter">
-                  <img src="/ubicacion.webp" alt="Instagram Santa Diabla" />
-              </a>
-            </div>
+        <div className="footerDiv">
+          <img
+            className="footerDivImg"
+            src="logoHeader.webp"
+            alt="Cerveza Santa Diabla"
+          />
+          <p className="footerDir">
+            Dirección: Mitre 4079, Rosario, Santa Fe, Argentina
+          </p>
+          <div className="footerDivIcons">
+            <a
+              href="https://api.whatsapp.com/send?phone=5493412754782&text=%27Hola,%20quiero%20mas%20informacion%20sobre%20las%20birritas%22"
+              target="_blank"
+              className="iconosFooter"
+            >
+              <img src="/wspFooter.webp" alt="Wsp Santa Diabla" />
+            </a>
+            <a
+              href="https://www.instagram.com/cerveceriasantadiabla?igsh=MWljZHdvYXYyMHhyNQ=="
+              target="_blank"
+              className="iconosFooter"
+            >
+              <img src="/instaFooter.webp" alt="Instagram Santa Diabla" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/xECfcNi8XTUE8dxf6"
+              target="_blank"
+              className="iconosFooter"
+            >
+              <img src="/ubicacion.webp" alt="Instagram Santa Diabla" />
+            </a>
           </div>
+        </div>
       </footer>
-
     </>
-  );
+  )
 }
 
-export default App;
+export default App
