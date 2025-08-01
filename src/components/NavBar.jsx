@@ -26,6 +26,7 @@ export const NavBar = () => {
           className="hover-underline oswald"
           target="_blank"
           href="https://cervezasantadiabla2.mitiendanube.com/"
+          style={{ display: 'none' }}
         >
           Tienda
         </a>
@@ -55,6 +56,14 @@ export const NavBar = () => {
       <div className={`dropdownMenu ${menuOpen ? 'open' : ''}`}>
         <a className="hover-underline_Mobile" href="#Productos">
           Productos
+        </a>
+        <a
+          className="hover-underline_Mobile"
+          target="_blank"
+          href="https://cervezasantadiabla2.mitiendanube.com/"
+          style={{ display: 'none' }}
+        >
+          Tienda
         </a>
         <a className="hover-underline_Mobile" href="#Servicios">
           Servicios
