@@ -337,6 +337,18 @@ function App() {
             </a>
           </div>
         </div>
+        <div className="footerCredits">
+          <span className="footerCreditsText">Desarrollado por</span>
+          <img src="/higo.png" alt="FigProjects" className="footerHigoImg" />
+          <a
+            href="https://www.figprojects.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footerCreditsLink"
+          >
+            FigProjects
+          </a>
+        </div>
       </footer>
     </>
   )
